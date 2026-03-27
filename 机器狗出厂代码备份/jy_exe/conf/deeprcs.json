@@ -1,0 +1,22 @@
+{
+    "json_version": 2.5,
+    "this_robot": {
+        "module_name": "JY-S5",
+        "serial_number": "200",
+        "wifi_number": "Lite3-2044",
+        "type": "standard"
+    },
+    "motion": {
+        "forward_velocity_offset": 0,
+        "side_velocity_offset": 0,
+        "stand_height": 0.33
+    },
+    "backflip_hip_kp_fl":80,
+    "backflip_hip_kp_fr":80,
+    "backflip_hip_kp_hl":80,
+    "backflip_hip_kp_hr":80,
+    "backflip_knee_kp":80,
+    "sideflip_abad_kp":53,        
+    "sideflip_hip_kp":4.5,
+    "sideflip_knee_kp":55
+}

@@ -1,0 +1,82 @@
+# robot_ip_address: 192.168.1.120
+# port_number: 43893
+
+# standup_timesteps: 75
+# standby_timesteps: 50
+
+# control_dt: 0.01 #两个时间间隔待确�?# policy_dt: 0.02
+
+# max_velocity_target: [1.2, 0.4, 0.]
+
+# reset_pose_path: ../config/
+# weight_path: ../config/RLNetmodel/
+# save_path: /home/ysc/Desktop/Lite3_SDK_original/Lite3_MotionSDK/logs/
+# standup_timesteps: 75
+
+
+
+
+log_action: false
+max_velocity_target: [1.5, 0.1, 0.5]
+forward_limit: 0.5
+horizon_limit: 0
+max_y_range: 0.25
+max_x_range: 0.15
+uncertain: 0.3
+target_power: 0.9
+target_air_time: 0.9
+v_acc: 0.1
+
+# ====== bipedal ==========
+joint_p_gain : [25, 25, 25]
+bipedal_joint_d_gain: [0.8, 0.8, 0.8]
+bipedal_max_v: 1.2
+bipedal_max_w: 1.5
+bipedal_height_range: [0.49, 0.491]
+lpf_HStand: 0.8
+bipedal_base_w_co: 1.0
+
+# communication
+robot_ip_address: 192.168.2.1
+receive_port: 43897
+command_port: 43893
+gamepad_port: 12121
+gridmap_port: 49998
+
+standup_timesteps: 200
+standby_timesteps: 50
+policy_dt: 0.02
+control_dt: 0.02
+
+##path
+reset_pose_path: ../config/
+log_path: ../logs/
+policy_path: ../config/policy/
+data_path: ../config/data/
+
+#joint controller configure
+#joint stand fl leg
+joint_default: [0.1, -1, 1.8]
+#joint c fl leg
+joint_squat: [-0.27, 1.25, -2.4]
+
+
+
+foot_height_sensor_noise      :  0.001
+foot_sensor_noise_position    :  0.001
+foot_sensor_noise_velocity    :  0.1
+foot_process_noise_position   :  0.002
+imu_process_noise_position    :  0.02
+imu_process_noise_velocity    :  0.02
+
+## Specification for JueyingLite3 Robot
+robot_name: JueyingX30
+absolute_hip_pos: [0.174, 0.062, 0.]
+hip_link_length: 0.0985
+thigh_link_length: 0.2
+calf_link_length: 0.2
+calf_offset_y: 0
+size_factor: 1.00
+
+foot_force_threshold: 20
+observation_source: RaiSim

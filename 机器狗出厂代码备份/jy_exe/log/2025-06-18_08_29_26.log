@@ -1,0 +1,13 @@
+[INFO] Hello, Ethernet Listener
+[INFO] Hello, IMU-Y sensor
+[INFO] Hello, Ethernet Speaker 
+[INFO] Hello, Recorder
+[INFO] Bye, Recorder
+performance
+Simple mixer control 'PCM',0
+  Capabilities: volume
+  Playback channels: Front Left - Front Right
+  Capture channels: Front Left - Front Right
+  Limits: 0 - 192
+  Front Left: 179 [93%] [-6.50dB]
+  Front Right: 179 [93%] [-6.50dB]

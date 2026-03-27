@@ -1,0 +1,96 @@
+log_action: false
+# ======= controller configure ==========
+base_w_co: 0.8
+base_acc_co: 1.0
+uncertain: 0.
+target_power: 0.9
+target_air_time: 0.9
+v_acc: 0.075
+w_acc: 0.2
+reflect_freq: 300
+
+# ======== forward ========
+joint_p_gain: [25, 25, 25]
+forward_joint_d_gain: [0.6, 0.6, 0.6]
+max_velocity_target: [3.4, 1.6, 4.5]
+forward_limit: 2.0
+horizon_limit: 1
+height_range: [0.28, 0.36]
+max_y_range: 0.25
+max_x_range: 0.15
+forward_init_lpf: 0.79
+forward_init_v: 0.6
+forward_end_lpf: 0.766666666666667
+forward_end_v: 2.5
+
+# ======= stand =========
+stand_max_y_range: 0.4
+stand_switch_time: 10
+stand_lpf: 0.77
+
+# ====== jump ==========
+jump_max_v: 1.4
+jump_max_w: 1.9
+max_jump_time: 45
+jump_lpf: 0.766666666666667
+
+# ====== flip ==========
+max_flip_time: 55
+flip_lpf: 0.76666666666666666
+
+max_y_range: 0.25
+max_x_range: 0.15
+stand_max_y_range: 0.3
+
+
+
+
+# communication
+robot_ip_address: 192.168.2.1
+receive_port: 43897
+command_port: 43893
+gamepad_port: 12121
+gridmap_port: 49998
+
+standup_timesteps: 150
+standby_timesteps: 50
+policy_dt: 0.02
+control_dt: 0.02
+
+##path
+reset_pose_path: ../config/
+log_path: ../logs/
+policy_path: ../config/policy/
+data_path: ../config/data/
+
+#joint controller configure
+joint_p_gain: [25, 25, 25]
+joint_d_gain: [0.6, 0.6, 0.6]
+#joint stand fl leg
+joint_default: [0.1, -1, 1.8]
+#joint c fl leg
+joint_squat: [-0.4, 1.25, -2.55]
+forward_lpf: 0.79
+stand_lpf: 0.78
+jump_lpf: 0.77
+base_w_co: 0.3
+
+
+foot_height_sensor_noise      :  0.001
+foot_sensor_noise_position    :  0.001
+foot_sensor_noise_velocity    :  0.1
+foot_process_noise_position   :  0.002
+imu_process_noise_position    :  0.02
+imu_process_noise_velocity    :  0.02
+
+## Specification for JueyingLite3 Robot
+robot_name: JueyingX30
+absolute_hip_pos: [0.174, 0.062, 0.]
+hip_link_length: 0.0985
+thigh_link_length: 0.2
+calf_link_length: 0.2
+calf_offset_y: 0
+size_factor: 1.00
+
+foot_force_threshold: 20
+observation_source: RaiSim

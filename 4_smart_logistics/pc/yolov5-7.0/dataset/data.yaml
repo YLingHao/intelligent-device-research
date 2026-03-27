@@ -1,0 +1,22 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here
+
+# 这个文件是数据配置文件，存放着 数据集源路径root、训练集、验证集、测试集地址，类别个数，类别名，下载地址等信息。
+
+
+# 数据集源路径root、训练集、验证集、测试集地址
+
+train: dataset/images/train  # root下的训练集地址 128 images
+val: dataset/images/val  # root下的验证集地址 128 images
+test:  # root下的验证集地址 128 images
+
+# 数据集类别信息
+nc: 4 # 数据集类别数量
+names: ['vegetables','mechanical','drink','furniture' ]  # class names
+
+

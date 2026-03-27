@@ -1,0 +1,10 @@
+[Unit]
+Description=jy_exe
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/ysc/jy_exe/run.sh
+
+[Install]
+WantedBy=network.target

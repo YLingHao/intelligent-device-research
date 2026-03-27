@@ -1,0 +1,10 @@
+[Unit]
+Description=wifi
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/ysc/jy_exe/scripts/ap_start.sh start 5G
+
+[Install]
+WantedBy=network.target

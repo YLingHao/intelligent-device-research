@@ -1,0 +1,1368 @@
+[2025-06-13 15:58:36.033.397] [INFO  ] [Deeprcs] Robot ID: JY-S5-200 
+[2025-06-13 15:58:36.033.455] [INFO  ] [Deeprcs] Robot Version: standard 
+[2025-06-13 15:58:36.033.459] [INFO  ] [Deeprcs] DeepRCS is working 
+[2025-06-13 15:58:36.033.469] [INFO  ] [Deeprcs] Deeprcs Version: 2.0.153(153) 
+[2025-06-13 15:58:36.033.472] [INFO  ] [Deeprcs] DeepROS Version: 0.2.24(39) 
+[2025-06-13 15:58:36.033.474] [INFO  ] [Deeprcs] DeepRAS Version: 4.1.7(166) 
+[2025-06-13 15:58:36.160.261] [INFO  ] [RT-CAN] Hello, CAN Receive 
+[2025-06-13 15:58:36.160.261] [INFO  ] [Motor] Hello, CAN Send 
+[2025-06-13 15:58:36.160.452] [INFO  ] [CPU] Hello, CPU Monitor 
+[2025-06-13 15:58:36.160.488] [INFO  ] [Battery] Hello, Battery BMS 
+[2025-06-13 15:58:36.160.566] [INFO  ] [Controller] Hello, MPC Controller 
+[2025-06-13 15:58:36.160.684] [INFO  ] [UltrasonicSensor] Hello, Ultrasonic sensor 
+[2025-06-13 15:58:36.160.783] [INFO  ] [MpvVoice] Hello, MpvVoice 
+[2025-06-13 15:58:36.164.031] [INFO  ] [RT-CAN] Set motor timeout threshold = 200 ms
+ 
+[2025-06-13 15:58:37.160.607] [INFO  ] [Deeprcs] Algorithm is start 
+[2025-06-13 15:58:37.164.957] [INFO  ] [Controller] !!!Origin_jumplong_left_bias = +0.000 
+[2025-06-13 15:58:37.165.027] [INFO  ] [basicmethod] 
+******** Enable Status ********
+Flip: 1
+BackFlip: 1
+SideFlip: 1
+Greeting: 1
+Jump: 1
+Dance: 1
+TurnOver: 1
+******** Enable Status ********
+ 
+[2025-06-13 15:58:37.165.051] [INFO  ] [basicmethod] 
+******** Motion Config Setting ********
+Forward Vel Offset: 0.000000
+Side Vel Offset: 0.000000
+is_Default_LIDAR: 0.000000
+Load Mass: 0.000000
+Load X Offset: 0.000000
+Load Y Offset: 0.000000
+Load Z Offset: 60.000000
+Robot Backflip Hip Kp: 70.000000
+Robot Backflip Knee Kp: 70.000000
+Robot Sideflip Abed Kp: 70.000000
+Robot Sideflip Hip Kp: 70.000000
+Robot Sideflip Knee Kp: 60.000000
+backflip_fl_knee_kp: 40.000000
+kp_carpet_comp: 1.000000
+backflip_hl_hip_kp_comp: 1.000000
+backflip_hr_hip_kp_comp: 1.000000
+frontflip_Rev_comp: 0.000000
+jumplong_Rev_comp: 0.000000
+jumplong_left_bias: 0.700000
+policy_forward_kd: 0.900000
+policy_backward_kd: 1.200000
+policy_stand_kd: 0.000000
+******** Motion Config Setting ********
+ 
+[2025-06-13 15:58:37.462.430] [INFO  ] [common policy] common policy CZ network check success 
+[2025-06-13 15:58:37.462.527] [INFO  ] [common policy] 
+name : common policy
+path : ../policy/policy_waq_v7.11-5history-----.pt
+dim  : 45, 5, 270, 12
+dof  : 0.100000, -0.715000, 1.430000,
+       -0.100000, -0.715000, 1.430000,
+       0.100000, -0.715000, 1.430000,
+       -0.100000, -0.715000, 1.430000,
+kp   : 30.000000, 30.000000, 30.000000,
+       30.000000, 30.000000, 30.000000,
+       30.000000, 30.000000, 30.000000,
+       30.000000, 30.000000, 30.000000,
+kd   : 0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+limit: 20.000000, 20.000000, 30.000000,
+       20.000000, 20.000000, 30.000000,
+       20.000000, 20.000000, 30.000000,
+       20.000000, 20.000000, 30.000000,
+max_v: 1.200000, 0.800000, 1.500000,
+scale: 0.250000, 0.250000, 0.050000,
+       2.000000, 2.000000, 0.280000, 
+[2025-06-13 15:58:37.516.724] [INFO  ] [forward student policy] net_path: ../config/policy/ 
+[2025-06-13 15:58:37.516.819] [INFO  ] [forward student policy] stand_lpf: 0.770000 
+[2025-06-13 15:58:37.516.855] [INFO  ] [forward student policy] forward_init_lpf: 0.790000 
+[2025-06-13 15:58:37.516.866] [INFO  ] [forward student policy] forward_init_v: 0.600000 
+[2025-06-13 15:58:37.516.878] [INFO  ] [forward student policy] forward_end_lpf: 0.766667 
+[2025-06-13 15:58:37.516.897] [INFO  ] [forward student policy] forward_end_v: 2.500000 
+[2025-06-13 15:58:37.516.911] [INFO  ] [forward student policy] jump_lpf: 0.766667 
+[2025-06-13 15:58:37.516.921] [INFO  ] [forward student policy] flip_lpf: 0.766667 
+[2025-06-13 15:58:37.516.934] [INFO  ] [forward student policy] uncertain: 0.000000 
+[2025-06-13 15:58:37.516.955] [INFO  ] [forward student policy] v_acc: 0.075000 
+[2025-06-13 15:58:37.516.962] [INFO  ] [forward student policy] w_acc: 0.200000 
+[2025-06-13 15:58:37.516.978] [INFO  ] [forward student policy] stand_switch_time: 0.000000 
+[2025-06-13 15:58:37.516.988] [INFO  ] [forward student policy] reflect_freq: 0.000000 
+[2025-06-13 15:58:37.516.997] [INFO  ] [forward student policy] base_w_co: 0.800000 
+[2025-06-13 15:58:37.517.023] [INFO  ] [forward student policy] max_y_range: 0.250000 
+[2025-06-13 15:58:37.517.031] [INFO  ] [forward student policy] stand_max_y_range: 0.400000 
+[2025-06-13 15:58:37.517.039] [INFO  ] [forward student policy] max_x_range: 0.150000 
+[2025-06-13 15:58:37.517.060] [INFO  ] [forward student policy] target_power: 0.900000 
+[2025-06-13 15:58:37.517.066] [INFO  ] [forward student policy] target_air_time: 0.900000 
+[2025-06-13 15:58:37.517.072] [INFO  ] [forward student policy] forward_limit: 2.000000 
+[2025-06-13 15:58:37.517.078] [INFO  ] [forward student policy] horizon_limit: 1.000000 
+[2025-06-13 15:58:37.517.086] [INFO  ] [forward student policy] jump_max_v: 1.400000 
+[2025-06-13 15:58:37.517.094] [INFO  ] [forward student policy] jump_max_w: 1.900000 
+[2025-06-13 15:58:37.517.116] [INFO  ] [forward student policy] max_jump_time: 0.000000 
+[2025-06-13 15:58:37.517.126] [INFO  ] [forward student policy] max_flip_time: 0.000000 
+[2025-06-13 15:58:37.517.141] [INFO  ] [forward student policy] log_path: ../logs/ 
+[2025-06-13 15:58:37.517.152] [INFO  ] [forward student policy] dataPath: ../config/data/ 
+[2025-06-13 15:58:37.517.190] [INFO  ] [forward student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 15:58:37.517.194] [INFO  ] [forward student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 15:58:37.517.197] [INFO  ] [forward student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 15:58:37.517.219] [INFO  ] [forward student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 15:58:37.517.222] [INFO  ] [forward student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 15:58:37.517.224] [INFO  ] [forward student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 15:58:37.517.232] [INFO  ] [forward student policy] height_range[0] = 0.280000 
+[2025-06-13 15:58:37.517.234] [INFO  ] [forward student policy] height_range[1] = 0.360000 
+[2025-06-13 15:58:37.593.185] [INFO  ] [forward student policy] forward student policy LSC network check success 
+[2025-06-13 15:58:37.593.644] [INFO  ] [forward student policy] 
+name : forward student policy
+path : ../policy/forward_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, 0.000000,
+       0.000000, 0.000000, 0.000000, 
+[2025-06-13 15:58:37.637.121] [INFO  ] [jump student policy] net_path: ../config/policy/ 
+[2025-06-13 15:58:37.637.221] [INFO  ] [jump student policy] stand_lpf: 0.770000 
+[2025-06-13 15:58:37.637.252] [INFO  ] [jump student policy] forward_init_lpf: 0.790000 
+[2025-06-13 15:58:37.637.265] [INFO  ] [jump student policy] forward_init_v: 0.600000 
+[2025-06-13 15:58:37.637.277] [INFO  ] [jump student policy] forward_end_lpf: 0.766667 
+[2025-06-13 15:58:37.637.288] [INFO  ] [jump student policy] forward_end_v: 2.500000 
+[2025-06-13 15:58:37.637.300] [INFO  ] [jump student policy] jump_lpf: 0.766667 
+[2025-06-13 15:58:37.637.311] [INFO  ] [jump student policy] flip_lpf: 0.766667 
+[2025-06-13 15:58:37.637.322] [INFO  ] [jump student policy] uncertain: 0.000000 
+[2025-06-13 15:58:37.637.332] [INFO  ] [jump student policy] v_acc: 0.075000 
+[2025-06-13 15:58:37.637.338] [INFO  ] [jump student policy] w_acc: 0.200000 
+[2025-06-13 15:58:37.637.352] [INFO  ] [jump student policy] stand_switch_time: 0.000000 
+[2025-06-13 15:58:37.637.361] [INFO  ] [jump student policy] reflect_freq: 0.000000 
+[2025-06-13 15:58:37.637.367] [INFO  ] [jump student policy] base_w_co: 0.800000 
+[2025-06-13 15:58:37.637.392] [INFO  ] [jump student policy] max_y_range: 0.250000 
+[2025-06-13 15:58:37.637.412] [INFO  ] [jump student policy] stand_max_y_range: 0.400000 
+[2025-06-13 15:58:37.637.419] [INFO  ] [jump student policy] max_x_range: 0.150000 
+[2025-06-13 15:58:37.637.424] [INFO  ] [jump student policy] target_power: 0.900000 
+[2025-06-13 15:58:37.637.429] [INFO  ] [jump student policy] target_air_time: 0.900000 
+[2025-06-13 15:58:37.637.436] [INFO  ] [jump student policy] forward_limit: 2.000000 
+[2025-06-13 15:58:37.637.443] [INFO  ] [jump student policy] horizon_limit: 1.000000 
+[2025-06-13 15:58:37.637.452] [INFO  ] [jump student policy] jump_max_v: 1.400000 
+[2025-06-13 15:58:37.637.462] [INFO  ] [jump student policy] jump_max_w: 1.900000 
+[2025-06-13 15:58:37.637.504] [INFO  ] [jump student policy] max_jump_time: 0.000000 
+[2025-06-13 15:58:37.637.514] [INFO  ] [jump student policy] max_flip_time: 0.000000 
+[2025-06-13 15:58:37.637.524] [INFO  ] [jump student policy] log_path: ../logs/ 
+[2025-06-13 15:58:37.637.534] [INFO  ] [jump student policy] dataPath: ../config/data/ 
+[2025-06-13 15:58:37.637.566] [INFO  ] [jump student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 15:58:37.637.569] [INFO  ] [jump student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 15:58:37.637.572] [INFO  ] [jump student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 15:58:37.637.609] [INFO  ] [jump student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 15:58:37.637.613] [INFO  ] [jump student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 15:58:37.637.615] [INFO  ] [jump student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 15:58:37.637.625] [INFO  ] [jump student policy] height_range[0] = 0.280000 
+[2025-06-13 15:58:37.637.628] [INFO  ] [jump student policy] height_range[1] = 0.360000 
+[2025-06-13 15:58:37.668.863] [INFO  ] [jump student policy] jump student policy jump network check success 
+[2025-06-13 15:58:37.669.318] [INFO  ] [jump student policy] 
+name : jump student policy
+path : ../policy/jump_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, 20317275065760347645406016610976661504.000000,
+       0.000000, 33683241017699572893094287577702203392.000000, 0.000000, 
+[2025-06-13 15:58:37.709.544] [INFO  ] [flip student policy] net_path: ../config/policy/ 
+[2025-06-13 15:58:37.709.606] [INFO  ] [flip student policy] stand_lpf: 0.770000 
+[2025-06-13 15:58:37.709.625] [INFO  ] [flip student policy] forward_init_lpf: 0.790000 
+[2025-06-13 15:58:37.709.637] [INFO  ] [flip student policy] forward_init_v: 0.600000 
+[2025-06-13 15:58:37.709.645] [INFO  ] [flip student policy] forward_end_lpf: 0.766667 
+[2025-06-13 15:58:37.709.654] [INFO  ] [flip student policy] forward_end_v: 2.500000 
+[2025-06-13 15:58:37.709.663] [INFO  ] [flip student policy] jump_lpf: 0.766667 
+[2025-06-13 15:58:37.709.673] [INFO  ] [flip student policy] flip_lpf: 0.766667 
+[2025-06-13 15:58:37.709.679] [INFO  ] [flip student policy] uncertain: 0.000000 
+[2025-06-13 15:58:37.709.685] [INFO  ] [flip student policy] v_acc: 0.075000 
+[2025-06-13 15:58:37.709.690] [INFO  ] [flip student policy] w_acc: 0.200000 
+[2025-06-13 15:58:37.709.700] [INFO  ] [flip student policy] stand_switch_time: 0.000000 
+[2025-06-13 15:58:37.709.707] [INFO  ] [flip student policy] reflect_freq: 0.000000 
+[2025-06-13 15:58:37.709.712] [INFO  ] [flip student policy] base_w_co: 0.800000 
+[2025-06-13 15:58:37.709.736] [INFO  ] [flip student policy] max_y_range: 0.250000 
+[2025-06-13 15:58:37.709.744] [INFO  ] [flip student policy] stand_max_y_range: 0.400000 
+[2025-06-13 15:58:37.709.751] [INFO  ] [flip student policy] max_x_range: 0.150000 
+[2025-06-13 15:58:37.709.755] [INFO  ] [flip student policy] target_power: 0.900000 
+[2025-06-13 15:58:37.709.771] [INFO  ] [flip student policy] target_air_time: 0.900000 
+[2025-06-13 15:58:37.709.777] [INFO  ] [flip student policy] forward_limit: 2.000000 
+[2025-06-13 15:58:37.709.783] [INFO  ] [flip student policy] horizon_limit: 1.000000 
+[2025-06-13 15:58:37.709.791] [INFO  ] [flip student policy] jump_max_v: 1.400000 
+[2025-06-13 15:58:37.709.799] [INFO  ] [flip student policy] jump_max_w: 1.900000 
+[2025-06-13 15:58:37.709.826] [INFO  ] [flip student policy] max_jump_time: 0.000000 
+[2025-06-13 15:58:37.709.834] [INFO  ] [flip student policy] max_flip_time: 0.000000 
+[2025-06-13 15:58:37.709.845] [INFO  ] [flip student policy] log_path: ../logs/ 
+[2025-06-13 15:58:37.709.855] [INFO  ] [flip student policy] dataPath: ../config/data/ 
+[2025-06-13 15:58:37.709.881] [INFO  ] [flip student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 15:58:37.709.884] [INFO  ] [flip student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 15:58:37.709.885] [INFO  ] [flip student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 15:58:37.709.903] [INFO  ] [flip student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 15:58:37.709.905] [INFO  ] [flip student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 15:58:37.709.907] [INFO  ] [flip student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 15:58:37.709.916] [INFO  ] [flip student policy] height_range[0] = 0.280000 
+[2025-06-13 15:58:37.709.918] [INFO  ] [flip student policy] height_range[1] = 0.360000 
+[2025-06-13 15:58:37.738.916] [INFO  ] [flip student policy] flip student policy flip network check success 
+[2025-06-13 15:58:37.739.382] [INFO  ] [flip student policy] 
+name : flip student policy
+path : ../policy/flip_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, 35928787714558263932411183556582178816.000000,
+       0.000000, 45010317744231713971415261108900986880.000000, 0.000000, 
+[2025-06-13 15:58:37.758.898] [INFO  ] [Battery] SoC = 100%, Volt = +33.100V, Temp 25 
+[2025-06-13 15:58:37.788.433] [INFO  ] [stand student policy] net_path: ../config/policy/ 
+[2025-06-13 15:58:37.788.471] [INFO  ] [stand student policy] stand_lpf: 0.770000 
+[2025-06-13 15:58:37.788.490] [INFO  ] [stand student policy] forward_init_lpf: 0.790000 
+[2025-06-13 15:58:37.788.497] [INFO  ] [stand student policy] forward_init_v: 0.600000 
+[2025-06-13 15:58:37.788.506] [INFO  ] [stand student policy] forward_end_lpf: 0.766667 
+[2025-06-13 15:58:37.788.515] [INFO  ] [stand student policy] forward_end_v: 2.500000 
+[2025-06-13 15:58:37.788.525] [INFO  ] [stand student policy] jump_lpf: 0.766667 
+[2025-06-13 15:58:37.788.537] [INFO  ] [stand student policy] flip_lpf: 0.766667 
+[2025-06-13 15:58:37.788.543] [INFO  ] [stand student policy] uncertain: 0.000000 
+[2025-06-13 15:58:37.788.550] [INFO  ] [stand student policy] v_acc: 0.075000 
+[2025-06-13 15:58:37.788.563] [INFO  ] [stand student policy] w_acc: 0.200000 
+[2025-06-13 15:58:37.788.579] [INFO  ] [stand student policy] stand_switch_time: 0.000000 
+[2025-06-13 15:58:37.788.587] [INFO  ] [stand student policy] reflect_freq: 0.000000 
+[2025-06-13 15:58:37.788.592] [INFO  ] [stand student policy] base_w_co: 0.800000 
+[2025-06-13 15:58:37.788.615] [INFO  ] [stand student policy] max_y_range: 0.250000 
+[2025-06-13 15:58:37.788.625] [INFO  ] [stand student policy] stand_max_y_range: 0.400000 
+[2025-06-13 15:58:37.788.638] [INFO  ] [stand student policy] max_x_range: 0.150000 
+[2025-06-13 15:58:37.788.645] [INFO  ] [stand student policy] target_power: 0.900000 
+[2025-06-13 15:58:37.788.649] [INFO  ] [stand student policy] target_air_time: 0.900000 
+[2025-06-13 15:58:37.788.657] [INFO  ] [stand student policy] forward_limit: 2.000000 
+[2025-06-13 15:58:37.788.663] [INFO  ] [stand student policy] horizon_limit: 1.000000 
+[2025-06-13 15:58:37.788.673] [INFO  ] [stand student policy] jump_max_v: 1.400000 
+[2025-06-13 15:58:37.788.683] [INFO  ] [stand student policy] jump_max_w: 1.900000 
+[2025-06-13 15:58:37.788.712] [INFO  ] [stand student policy] max_jump_time: 0.000000 
+[2025-06-13 15:58:37.788.723] [INFO  ] [stand student policy] max_flip_time: 0.000000 
+[2025-06-13 15:58:37.788.733] [INFO  ] [stand student policy] log_path: ../logs/ 
+[2025-06-13 15:58:37.788.745] [INFO  ] [stand student policy] dataPath: ../config/data/ 
+[2025-06-13 15:58:37.788.768] [INFO  ] [stand student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 15:58:37.788.773] [INFO  ] [stand student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 15:58:37.788.781] [INFO  ] [stand student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 15:58:37.788.799] [INFO  ] [stand student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 15:58:37.788.802] [INFO  ] [stand student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 15:58:37.788.806] [INFO  ] [stand student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 15:58:37.788.815] [INFO  ] [stand student policy] height_range[0] = 0.280000 
+[2025-06-13 15:58:37.788.819] [INFO  ] [stand student policy] height_range[1] = 0.360000 
+[2025-06-13 15:58:37.850.199] [INFO  ] [stand student policy] stand student policy LSC network check success 
+[2025-06-13 15:58:37.850.682] [INFO  ] [stand student policy] 
+name : stand student policy
+path : ../policy/stand_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -0.369500,
+       1.259157, 0.019405, 0.497824, 
+[2025-06-13 15:58:37.898.847] [INFO  ] [handstand policy] net_path: ../config/policy/ 
+[2025-06-13 15:58:37.898.923] [INFO  ] [handstand policy] lpf_HStand: 0.800000 
+[2025-06-13 15:58:37.898.985] [INFO  ] [handstand policy] uncertain: 0.000000 
+[2025-06-13 15:58:37.898.992] [INFO  ] [handstand policy] v_acc: 0.100000 
+[2025-06-13 15:58:37.899.025] [INFO  ] [handstand policy] bipedal_base_w_co: 1.000000 
+[2025-06-13 15:58:37.899.037] [INFO  ] [handstand policy] max_y_range: 0.250000 
+[2025-06-13 15:58:37.899.048] [INFO  ] [handstand policy] max_x_range: 0.150000 
+[2025-06-13 15:58:37.899.055] [INFO  ] [handstand policy] target_power: 0.900000 
+[2025-06-13 15:58:37.899.066] [INFO  ] [handstand policy] target_air_time: 0.900000 
+[2025-06-13 15:58:37.899.074] [INFO  ] [handstand policy] forward_limit: 0.500000 
+[2025-06-13 15:58:37.899.079] [INFO  ] [handstand policy] horizon_limit: 0.000000 
+[2025-06-13 15:58:37.899.096] [INFO  ] [handstand policy] bipedal_max_v: 1.200000 
+[2025-06-13 15:58:37.899.102] [INFO  ] [handstand policy] bipedal_max_w: 1.500000 
+[2025-06-13 15:58:37.899.120] [INFO  ] [handstand policy] log_path: ../logs/ 
+[2025-06-13 15:58:37.899.127] [INFO  ] [handstand policy] dataPath: ../config/data/ 
+[2025-06-13 15:58:37.899.165] [INFO  ] [handstand policy] bipedal_joint_d_gain[0] = 0.800000  
+[2025-06-13 15:58:37.899.168] [INFO  ] [handstand policy] bipedal_joint_d_gain[1] = 0.800000  
+[2025-06-13 15:58:37.899.170] [INFO  ] [handstand policy] bipedal_joint_d_gain[2] = 0.800000  
+[2025-06-13 15:58:37.899.178] [INFO  ] [handstand policy] maxVelCmd[0] = 1.500000 
+[2025-06-13 15:58:37.899.191] [INFO  ] [handstand policy] maxVelCmd[1] = 0.100000 
+[2025-06-13 15:58:37.899.195] [INFO  ] [handstand policy] maxVelCmd[2] = 0.500000 
+[2025-06-13 15:58:37.899.210] [INFO  ] [handstand policy] bipedal_height_range[0] = 0.490000 
+[2025-06-13 15:58:37.899.211] [INFO  ] [handstand policy] bipedal_height_range[1] = 0.491000 
+[2025-06-13 15:58:37.928.861] [INFO  ] [handstand policy] handstand policy HStand network check success 
+[2025-06-13 15:58:37.929.287] [INFO  ] [handstand policy] 
+name : handstand policy
+path : ../policy/bipedal_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -0.257635,
+       -0.249855, 3.429924, -0.000011, 
+[2025-06-13 15:58:37.967.323] [INFO  ] [handstandswing policy] net_path: ../config/policy/ 
+[2025-06-13 15:58:37.967.386] [INFO  ] [handstandswing policy] lpf_HStand: 0.800000 
+[2025-06-13 15:58:37.967.432] [INFO  ] [handstandswing policy] uncertain: 0.000000 
+[2025-06-13 15:58:37.967.438] [INFO  ] [handstandswing policy] v_acc: 0.100000 
+[2025-06-13 15:58:37.967.471] [INFO  ] [handstandswing policy] bipedal_base_w_co: 1.000000 
+[2025-06-13 15:58:37.967.487] [INFO  ] [handstandswing policy] max_y_range: 0.250000 
+[2025-06-13 15:58:37.967.498] [INFO  ] [handstandswing policy] max_x_range: 0.150000 
+[2025-06-13 15:58:37.967.504] [INFO  ] [handstandswing policy] target_power: 0.900000 
+[2025-06-13 15:58:37.967.510] [INFO  ] [handstandswing policy] target_air_time: 0.900000 
+[2025-06-13 15:58:37.967.515] [INFO  ] [handstandswing policy] forward_limit: 0.500000 
+[2025-06-13 15:58:37.967.520] [INFO  ] [handstandswing policy] horizon_limit: 0.000000 
+[2025-06-13 15:58:37.967.536] [INFO  ] [handstandswing policy] bipedal_max_v: 1.200000 
+[2025-06-13 15:58:37.967.543] [INFO  ] [handstandswing policy] bipedal_max_w: 1.500000 
+[2025-06-13 15:58:37.967.560] [INFO  ] [handstandswing policy] log_path: ../logs/ 
+[2025-06-13 15:58:37.967.568] [INFO  ] [handstandswing policy] dataPath: ../config/data/ 
+[2025-06-13 15:58:37.967.609] [INFO  ] [handstandswing policy] bipedal_joint_d_gain[0] = 0.800000  
+[2025-06-13 15:58:37.967.612] [INFO  ] [handstandswing policy] bipedal_joint_d_gain[1] = 0.800000  
+[2025-06-13 15:58:37.967.615] [INFO  ] [handstandswing policy] bipedal_joint_d_gain[2] = 0.800000  
+[2025-06-13 15:58:37.967.623] [INFO  ] [handstandswing policy] maxVelCmd[0] = 1.500000 
+[2025-06-13 15:58:37.967.627] [INFO  ] [handstandswing policy] maxVelCmd[1] = 0.100000 
+[2025-06-13 15:58:37.967.628] [INFO  ] [handstandswing policy] maxVelCmd[2] = 0.500000 
+[2025-06-13 15:58:37.967.642] [INFO  ] [handstandswing policy] bipedal_height_range[0] = 0.490000 
+[2025-06-13 15:58:37.967.644] [INFO  ] [handstandswing policy] bipedal_height_range[1] = 0.491000 
+[2025-06-13 15:58:37.985.164] [INFO  ] [handstandswing policy] handstandswing policy HStandSwing network check success 
+[2025-06-13 15:58:37.985.563] [INFO  ] [handstandswing policy] 
+name : handstandswing policy
+path : ../policy/bipedal_motor_p_command_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -16.155235,
+       -19.173340, -15.260086, -22.085474, 
+[2025-06-13 15:58:37.985.605] [INFO  ] [NetworkController] policy map contains : 
+[2025-06-13 15:58:37.985.607] [INFO  ] [NetworkController] 0 : common policy  
+[2025-06-13 15:58:37.985.616] [INFO  ] [NetworkController] 1 : forward student policy  
+[2025-06-13 15:58:37.985.619] [INFO  ] [NetworkController] 2 : jump student policy  
+[2025-06-13 15:58:37.985.621] [INFO  ] [NetworkController] 3 : flip student policy  
+[2025-06-13 15:58:37.985.623] [INFO  ] [NetworkController] 4 : stand student policy  
+[2025-06-13 15:58:37.985.626] [INFO  ] [NetworkController] 5 : handstand policy  
+[2025-06-13 15:58:37.985.637] [INFO  ] [NetworkController] 6 : handstandswing policy  
+[2025-06-13 15:58:37.985.676] [ERROR ] [Controller] IMU data reading is timeout! 
+[2025-06-13 15:58:37.985.783] [INFO  ] [BasicMotion] Switching to kWaitForStanding!!! 
+[2025-06-13 15:58:37.986.218] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 0 
+[2025-06-13 15:58:37.986.231] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 0 
+[2025-06-13 15:58:37.986.261] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 1 
+[2025-06-13 15:58:37.987.199] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 2 
+[2025-06-13 15:58:37.988.197] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 3 
+[2025-06-13 15:58:37.989.197] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 4 
+[2025-06-13 15:58:38.065.205] [NOTICE] [Controller] IMU data reading has resumed! 
+[2025-06-13 15:58:40.166.163] [WARN  ] [CPU] Cpu temperature -1459733916 cpu  
+[2025-06-13 15:58:40.484.235] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:42.749.037] [INFO  ] [Battery] SoC = 100%, Volt = +33.100V, Temp 25 
+[2025-06-13 15:58:42.984.230] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:45.484.230] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:47.739.091] [INFO  ] [Battery] SoC = 100%, Volt = +33.100V, Temp 25 
+[2025-06-13 15:58:47.984.230] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:50.484.231] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:52.728.909] [INFO  ] [Battery] SoC = 100%, Volt = +33.000V, Temp 25 
+[2025-06-13 15:58:52.984.231] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:55.484.230] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:57.718.594] [INFO  ] [Battery] SoC = 100%, Volt = +33.000V, Temp 25 
+[2025-06-13 15:58:57.984.233] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:58:58.933.214] [INFO  ] [Controller] [AI Close] 
+[2025-06-13 15:58:59.913.474] [INFO  ] [Controller] Switch to Joystick Mode!!! 
+[2025-06-13 15:59:00.484.230] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:59:00.536.298] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 15:59:00.536.343] [INFO  ] [BasicMotion] Standing up, please wait... 
+[2025-06-13 15:59:00.536.358] [INFO  ] [BasicMotion] Switching to zeroposition !!!!! 
+[2025-06-13 15:59:02.708.166] [INFO  ] [Battery] SoC = 100%, Volt = +32.900V, Temp 25 
+[2025-06-13 15:59:02.984.229] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:59:05.484.231] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 23.307, +23.307, +23.307, HR: +23.307, +23.307, +23.307 Max FL-HipX = +25.039 Min HL-HipX = +23.307 
+[2025-06-13 15:59:06.038.216] [INFO  ] [BasicMotion] Standing up, please wait... 
+[2025-06-13 15:59:07.697.662] [INFO  ] [Battery] SoC = 100%, Volt = +32.800V, Temp 25 
+[2025-06-13 15:59:07.985.226] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +23.307, +25.039, HR: +25.039, +23.307, +25.039 Max FL-HipX = +25.039 Min HL-HipY = +23.307 
+[2025-06-13 15:59:08.039.218] [INFO  ] [BasicMotion] Stand up action has finished, waitting to switch to force control mode! 
+[2025-06-13 15:59:08.039.255] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 15:59:09.033.210] [INFO  ] [Controller] trot run... 
+[2025-06-13 15:59:10.242.270] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 33.081548 
+[2025-06-13 15:59:10.485.221] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +23.307, +25.039, HR: +25.039, +23.307, +25.039 Max FL-HipX = +25.039 Min HL-HipY = +23.307 
+[2025-06-13 15:59:12.687.350] [INFO  ] [Battery] SoC = 100%, Volt = +31.700V, Temp 25 
+[2025-06-13 15:59:12.985.225] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +23.307, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min HL-HipY = +23.307 
+[2025-06-13 15:59:15.485.222] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +26.772, +26.772, +25.039, HL: 26.772, +25.039, +26.772, HR: +26.772, +25.039, +26.772 Max FR-HipX = +26.772 Min FL-HipX = +25.039 
+[2025-06-13 15:59:17.677.012] [INFO  ] [Battery] SoC = 99%, Volt = +32.500V, Temp 25 
+[2025-06-13 15:59:17.985.222] [INFO  ] [Controller] [Joints] FL: +26.772, +25.039, +26.772 ,FR: +26.772, +26.772, +26.772, HL: 26.772, +25.039, +28.504, HR: +26.772, +25.039, +28.504 Max HL-Knee = +28.504 Min FL-HipY = +25.039 
+[2025-06-13 15:59:20.485.222] [INFO  ] [Controller] [Joints] FL: +26.772, +25.039, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 26.772, +25.039, +30.236, HR: +26.772, +25.039, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +25.039 
+[2025-06-13 15:59:22.666.623] [INFO  ] [Battery] SoC = 99%, Volt = +32.700V, Temp 25 
+[2025-06-13 15:59:22.985.222] [INFO  ] [Controller] [Joints] FL: +26.772, +25.039, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +31.969, HR: +26.772, +25.039, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +25.039 
+[2025-06-13 15:59:25.485.219] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +28.504, +28.504, HL: 28.504, +26.772, +33.701, HR: +26.772, +26.772, +33.701 Max HL-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 15:59:27.656.186] [INFO  ] [Battery] SoC = 99%, Volt = +32.300V, Temp 25 
+[2025-06-13 15:59:27.985.221] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +30.236, +28.504, +28.504, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +35.433 Max HL-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 15:59:30.485.221] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +30.236, +28.504, +30.236, HL: 28.504, +26.772, +37.165, HR: +28.504, +26.772, +37.165 Max HL-Knee = +37.165 Min FL-HipY = +26.772 
+[2025-06-13 15:59:32.645.593] [INFO  ] [Battery] SoC = 99%, Volt = +32.000V, Temp 25 
+[2025-06-13 15:59:32.985.218] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +28.504, +30.236, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +38.898 Max HR-Knee = +38.898 Min FL-HipY = +26.772 
+[2025-06-13 15:59:35.485.219] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +28.504, +30.236, HL: 30.236, +26.772, +38.898, HR: +28.504, +26.772, +38.898 Max HL-Knee = +38.898 Min FL-HipY = +26.772 
+[2025-06-13 15:59:37.635.111] [INFO  ] [Battery] SoC = 99%, Volt = +32.400V, Temp 25 
+[2025-06-13 15:59:37.985.220] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 30.236, +28.504, +40.630, HR: +28.504, +26.772, +40.630 Max HL-Knee = +40.630 Min FL-HipY = +26.772 
+[2025-06-13 15:59:40.485.221] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 30.236, +28.504, +42.362, HR: +28.504, +28.504, +40.630 Max HL-Knee = +42.362 Min FL-HipY = +26.772 
+[2025-06-13 15:59:42.624.587] [INFO  ] [Battery] SoC = 99%, Volt = +32.600V, Temp 25 
+[2025-06-13 15:59:42.985.221] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +44.094, HR: +30.236, +28.504, +42.362 Max HL-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 15:59:45.485.223] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +33.701 ,FR: +33.701, +28.504, +31.969, HL: 31.969, +28.504, +44.094, HR: +30.236, +28.504, +44.094 Max HL-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 15:59:47.614.030] [INFO  ] [Battery] SoC = 98%, Volt = +32.300V, Temp 25 
+[2025-06-13 15:59:47.985.218] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +33.701 ,FR: +33.701, +28.504, +33.701, HL: 31.969, +28.504, +45.827, HR: +30.236, +28.504, +44.094 Max HL-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 15:59:50.485.220] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +33.701, +28.504, +33.701, HL: 31.969, +28.504, +45.827, HR: +30.236, +28.504, +45.827 Max HL-Knee = +45.827 Min FL-HipY = +28.504 
+[2025-06-13 15:59:52.603.500] [INFO  ] [Battery] SoC = 98%, Volt = +32.100V, Temp 25 
+[2025-06-13 15:59:52.985.231] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +33.701, +28.504, +33.701, HL: 31.969, +28.504, +47.559, HR: +31.969, +30.236, +45.827 Max HL-Knee = +47.559 Min FL-HipY = +28.504 
+[2025-06-13 15:59:55.485.227] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +30.236, +47.559, HR: +31.969, +30.236, +47.559 Max HL-Knee = +47.559 Min FL-HipY = +28.504 
+[2025-06-13 15:59:56.323.217] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 15:59:57.325.237] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 80.164548 
+[2025-06-13 15:59:57.592.752] [INFO  ] [Battery] SoC = 98%, Volt = +32.100V, Temp 25 
+[2025-06-13 15:59:57.985.227] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:00.206.217] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:00:00.485.285] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:00.733.210] [INFO  ] [Controller] trot... 
+[2025-06-13 16:00:01.929.240] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 84.768548 
+[2025-06-13 16:00:02.582.037] [INFO  ] [Battery] SoC = 98%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:00:02.985.221] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +35.433 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:05.485.221] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +35.433 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:05.529.619] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:00:05.530.206] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:00:06.532.240] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 89.371548 
+[2025-06-13 16:00:07.571.219] [INFO  ] [Battery] SoC = 98%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:00:07.985.221] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +35.433 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +28.504, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:10.485.220] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +28.504, +47.559, HR: +31.969, +28.504, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:10.582.716] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:00:10.583.205] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:00:11.585.237] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 94.424548 
+[2025-06-13 16:00:12.560.449] [INFO  ] [Battery] SoC = 98%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:00:12.985.223] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +28.504, +47.559, HR: +31.969, +28.504, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 16:00:14.735.624] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:00:14.736.216] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:00:15.485.225] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +28.504, +45.827, HR: +31.969, +28.504, +47.559 Max HR-Knee = +47.559 Min FL-HipY = +28.504 
+[2025-06-13 16:00:17.549.664] [INFO  ] [Battery] SoC = 98%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:17.985.225] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +28.504, +45.827, HR: +31.969, +28.504, +47.559 Max HR-Knee = +47.559 Min FL-HipY = +28.504 
+[2025-06-13 16:00:20.485.228] [INFO  ] [Controller] [Joints] FL: +33.701, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 31.969, +28.504, +45.827, HR: +31.969, +28.504, +47.559 Max HR-Knee = +47.559 Min FL-HipY = +28.504 
+[2025-06-13 16:00:22.538.879] [INFO  ] [Battery] SoC = 98%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:22.985.227] [INFO  ] [Controller] [Joints] FL: +33.701, +26.772, +33.701 ,FR: +33.701, +28.504, +35.433, HL: 31.969, +28.504, +44.094, HR: +31.969, +28.504, +45.827 Max HR-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 16:00:25.485.227] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +33.701 ,FR: +33.701, +28.504, +35.433, HL: 31.969, +28.504, +44.094, HR: +30.236, +28.504, +45.827 Max HR-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 16:00:27.528.158] [INFO  ] [Battery] SoC = 98%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:27.985.229] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +33.701 ,FR: +33.701, +28.504, +35.433, HL: 30.236, +28.504, +42.362, HR: +30.236, +28.504, +45.827 Max HR-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 16:00:30.485.230] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +33.701, +28.504, +35.433, HL: 30.236, +28.504, +42.362, HR: +30.236, +26.772, +45.827 Max HR-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 16:00:32.517.334] [INFO  ] [Battery] SoC = 98%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:32.985.229] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +31.969, +28.504, +35.433, HL: 30.236, +28.504, +40.630, HR: +30.236, +26.772, +45.827 Max HR-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 16:00:35.485.227] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +31.969, +28.504, +35.433, HL: 30.236, +26.772, +40.630, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:37.506.346] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:37.985.226] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +31.969, +28.504, +35.433, HL: 30.236, +26.772, +40.630, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:40.485.231] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +31.969, +28.504, +35.433, HL: 30.236, +26.772, +38.898, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:42.495.582] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:42.985.230] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +31.969, +26.772, +35.433, HL: 30.236, +26.772, +38.898, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:45.485.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +35.433, HL: 30.236, +26.772, +38.898, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:47.484.874] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:47.985.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +35.433, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:50.485.230] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:52.474.248] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:52.985.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:55.485.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:00:57.463.451] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:00:57.985.230] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:00.485.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:02.452.741] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:02.985.226] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:05.485.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:07.441.983] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:07.985.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:10.485.230] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:12.431.218] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:12.985.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:15.485.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +35.433, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:17.420.374] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:17.985.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:20.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:22.409.551] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:22.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:01:25.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:27.398.785] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:27.985.218] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:30.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:32.388.019] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:32.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:35.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:37.377.280] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:37.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 28.504, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:40.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:42.366.499] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:42.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:45.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:47.355.721] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:47.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:50.485.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:52.344.835] [INFO  ] [Battery] SoC = 97%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:52.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:55.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:01:57.334.005] [INFO  ] [Battery] SoC = 96%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:01:57.985.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:00.485.223] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:02.323.063] [INFO  ] [Battery] SoC = 96%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:02:02.985.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:05.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:07.312.046] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:07.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:10.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:12.301.043] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:12.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:15.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:17.289.977] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:17.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:20.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:22.278.863] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:22.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:25.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:27.267.872] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:27.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:30.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:32.256.865] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:32.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:35.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:37.245.983] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:37.985.233] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:40.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:42.234.983] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:42.985.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:45.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:47.224.125] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:47.985.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:50.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:52.213.356] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:52.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:55.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:02:57.202.642] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:02:57.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:03:00.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +25.039, +44.094 Max HR-Knee = +44.094 Min HR-HipY = +25.039 
+[2025-06-13 16:03:02.191.981] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:02.985.219] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:05.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:07.181.313] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:07.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:10.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:12.170.633] [INFO  ] [Battery] SoC = 96%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:12.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:15.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:17.159.954] [INFO  ] [Battery] SoC = 95%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:17.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:20.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:22.149.080] [INFO  ] [Battery] SoC = 95%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:22.985.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:25.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:27.138.123] [INFO  ] [Battery] SoC = 95%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:27.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:30.485.220] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:32.127.279] [INFO  ] [Battery] SoC = 95%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:32.985.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 30.236, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:35.485.230] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 31.969, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:37.066.241] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 299.905548 
+[2025-06-13 16:03:37.116.120] [INFO  ] [Battery] SoC = 95%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:03:37.985.223] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 31.969, +26.772, +33.701, HR: +28.504, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:40.485.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +28.504, +26.772, +33.701, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:42.105.056] [INFO  ] [Battery] SoC = 95%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:03:42.985.225] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:45.134.209] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 16:03:45.166.613] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:03:45.167.206] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:03:45.485.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:47.094.088] [INFO  ] [Battery] SoC = 95%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:03:47.985.226] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:49.900.212] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 16:03:49.900.267] [INFO  ] [BasicMotion] Standing down, please wait... 
+[2025-06-13 16:03:50.485.232] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:52.083.124] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:03:52.401.216] [INFO  ] [BasicMotion] Stand down action has finished, waitting to stand up again!!! 
+[2025-06-13 16:03:52.985.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +28.504, +33.701, HL: 33.701, +26.772, +35.433, HR: +31.969, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:55.485.223] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +31.969 ,FR: +30.236, +26.772, +33.701, HL: 33.701, +26.772, +35.433, HR: +31.969, +26.772, +44.094 Max HR-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 16:03:57.072.087] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:03:57.985.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +35.433, HR: +31.969, +26.772, +42.362 Max HR-Knee = +42.362 Min FL-HipY = +26.772 
+[2025-06-13 16:04:00.485.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +35.433, HR: +31.969, +26.772, +42.362 Max HR-Knee = +42.362 Min FL-HipY = +26.772 
+[2025-06-13 16:04:02.061.119] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:02.985.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +33.701, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +40.630 Max HR-Knee = +40.630 Min FL-HipY = +26.772 
+[2025-06-13 16:04:05.485.227] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +40.630 Max HR-Knee = +40.630 Min FL-HipY = +26.772 
+[2025-06-13 16:04:07.050.113] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:07.985.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +40.630 Max HR-Knee = +40.630 Min FL-HipY = +26.772 
+[2025-06-13 16:04:10.485.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 31.969, +26.772, +35.433, HR: +30.236, +26.772, +38.898 Max HR-Knee = +38.898 Min FL-HipY = +26.772 
+[2025-06-13 16:04:12.039.124] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:12.985.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +38.898 Max HR-Knee = +38.898 Min FL-HipY = +26.772 
+[2025-06-13 16:04:15.485.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +38.898 Max HR-Knee = +38.898 Min FL-HipY = +26.772 
+[2025-06-13 16:04:17.028.274] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:17.985.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +26.772 
+[2025-06-13 16:04:20.485.235] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +30.236, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +26.772 
+[2025-06-13 16:04:22.017.382] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:22.985.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +30.236, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +26.772 
+[2025-06-13 16:04:25.485.235] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +30.236, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +26.772 
+[2025-06-13 16:04:27.006.508] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:27.985.231] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +30.236, +26.772, +30.236, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 16:04:30.485.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +30.236, +26.772, +30.236, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 16:04:31.995.639] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:32.985.231] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +30.236, +26.772, +30.236, HL: 31.969, +26.772, +33.701, HR: +30.236, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 16:04:35.485.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +30.236, +26.772, +30.236, HL: 30.236, +26.772, +33.701, HR: +30.236, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 16:04:36.984.773] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:37.985.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +28.504, +26.772, +30.236, HL: 30.236, +26.772, +33.701, HR: +30.236, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 16:04:40.485.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +28.504, +26.772, +30.236, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 16:04:41.973.829] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:42.985.231] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:04:45.485.228] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:04:46.962.890] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:47.985.229] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:04:50.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:04:51.951.894] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:52.985.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:04:55.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:04:56.940.842] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:04:57.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:05:00.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +33.701 Max HR-Knee = +33.701 Min FL-HipY = +26.772 
+[2025-06-13 16:05:01.929.795] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:02.985.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:05.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:06.918.753] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:07.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:10.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:11.907.605] [INFO  ] [Battery] SoC = 95%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:12.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:15.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:16.896.426] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:17.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:20.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:21.885.422] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:22.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:25.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:26.874.313] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:27.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:30.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:31.863.201] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:32.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:35.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +31.969 Max HR-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:36.852.128] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:37.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +31.969 Max HR-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:40.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +31.969 Max HR-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:41.841.068] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:42.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +31.969 Max HR-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:45.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +31.969 Max HR-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:05:46.829.780] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:47.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:05:50.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:05:51.818.564] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:52.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:05:55.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:05:56.807.476] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:05:57.985.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:00.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:01.796.450] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:02.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:05.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:06.785.231] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:07.985.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:10.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:11.774.055] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:12.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:15.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:16.762.978] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:17.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:20.485.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:21.751.898] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:22.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:25.485.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:26.740.966] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:27.985.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:30.485.231] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:31.730.007] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:32.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:35.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:36.719.047] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:37.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:40.485.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:41.707.896] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:42.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:45.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:46.696.803] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:47.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:50.485.236] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:51.685.605] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:52.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:55.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:06:56.674.544] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:06:57.985.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:00.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:01.663.384] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:02.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:05.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:06.652.351] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:07.985.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:10.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:11.641.273] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:12.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:15.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:16.630.100] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:17.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:20.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:21.619.090] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:22.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:25.485.343] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:26.607.983] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:27.985.429] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:30.485.363] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:31.596.767] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:32.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:35.485.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:36.585.579] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:37.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:40.485.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:41.574.411] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:42.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:45.485.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:46.563.128] [INFO  ] [Battery] SoC = 94%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:47.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:50.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:51.552.155] [INFO  ] [Battery] SoC = 93%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:52.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:55.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +28.504 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:07:56.541.111] [INFO  ] [Battery] SoC = 93%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:07:57.985.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +28.504 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:08:00.485.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +30.236, HR: +28.504, +26.772, +28.504 Max HL-Knee = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:08:01.529.923] [INFO  ] [Battery] SoC = 93%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:08:02.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:05.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:06.518.878] [INFO  ] [Battery] SoC = 93%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:08:07.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:10.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:11.507.801] [INFO  ] [Battery] SoC = 93%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:08:12.985.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:15.485.230] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:16.496.554] [INFO  ] [Battery] SoC = 93%, Volt = +32.500V, Temp 25 
+[2025-06-13 16:08:17.985.233] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:20.485.227] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:21.485.265] [INFO  ] [Battery] SoC = 93%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:08:22.985.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:25.485.229] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:26.474.035] [INFO  ] [Battery] SoC = 93%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:08:27.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:30.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:31.462.860] [INFO  ] [Battery] SoC = 93%, Volt = +32.400V, Temp 25 
+[2025-06-13 16:08:32.985.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:35.485.228] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:36.145.213] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 16:08:36.145.251] [INFO  ] [BasicMotion] Standing up, please wait... 
+[2025-06-13 16:08:36.451.656] [INFO  ] [Battery] SoC = 93%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:08:37.985.226] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +26.772 ,FR: +28.504, +26.772, +26.772, HL: 28.504, +26.772, +28.504, HR: +28.504, +26.772, +28.504 Max FL-HipX = +28.504 Min FL-HipY = +26.772 
+[2025-06-13 16:08:38.147.219] [INFO  ] [BasicMotion] Stand up action has finished, waitting to switch to force control mode! 
+[2025-06-13 16:08:38.147.255] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:08:38.948.242] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 601.787548 
+[2025-06-13 16:08:40.485.225] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +28.504, +26.772, HL: 30.236, +26.772, +30.236, HR: +28.504, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:08:41.440.510] [INFO  ] [Battery] SoC = 93%, Volt = +32.200V, Temp 25 
+[2025-06-13 16:08:42.985.222] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +28.504, +28.504, +28.504, HL: 30.236, +28.504, +30.236, HR: +30.236, +26.772, +30.236 Max HL-HipX = +30.236 Min FL-HipY = +26.772 
+[2025-06-13 16:08:45.485.221] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +28.504 ,FR: +28.504, +28.504, +28.504, HL: 30.236, +28.504, +31.969, HR: +30.236, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +26.772 
+[2025-06-13 16:08:46.429.514] [INFO  ] [Battery] SoC = 93%, Volt = +32.100V, Temp 25 
+[2025-06-13 16:08:47.985.218] [INFO  ] [Controller] [Joints] FL: +30.236, +28.504, +28.504 ,FR: +30.236, +28.504, +28.504, HL: 31.969, +28.504, +31.969, HR: +31.969, +26.772, +31.969 Max HL-HipX = +31.969 Min HR-HipY = +26.772 
+[2025-06-13 16:08:50.485.219] [INFO  ] [Controller] [Joints] FL: +30.236, +28.504, +30.236 ,FR: +30.236, +28.504, +28.504, HL: 31.969, +28.504, +33.701, HR: +31.969, +28.504, +33.701 Max HL-Knee = +33.701 Min FL-HipY = +28.504 
+[2025-06-13 16:08:51.418.512] [INFO  ] [Battery] SoC = 93%, Volt = +32.100V, Temp 25 
+[2025-06-13 16:08:52.985.221] [INFO  ] [Controller] [Joints] FL: +30.236, +28.504, +30.236 ,FR: +30.236, +28.504, +28.504, HL: 31.969, +28.504, +33.701, HR: +31.969, +28.504, +33.701 Max HL-Knee = +33.701 Min FL-HipY = +28.504 
+[2025-06-13 16:08:55.485.220] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +30.236 ,FR: +30.236, +28.504, +30.236, HL: 31.969, +28.504, +33.701, HR: +31.969, +28.504, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:08:56.407.424] [INFO  ] [Battery] SoC = 93%, Volt = +32.100V, Temp 25 
+[2025-06-13 16:08:57.848.617] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:08:57.849.206] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:08:57.985.225] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +30.236 ,FR: +30.236, +28.504, +30.236, HL: 31.969, +28.504, +35.433, HR: +31.969, +28.504, +35.433 Max HL-Knee = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:08:58.906.239] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 621.745548 
+[2025-06-13 16:09:00.256.619] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:09:00.257.205] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:09:00.485.225] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +30.236 ,FR: +31.969, +28.504, +30.236, HL: 31.969, +28.504, +35.433, HR: +31.969, +28.504, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:01.396.322] [INFO  ] [Battery] SoC = 93%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:02.985.225] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +30.236, HL: 33.701, +28.504, +35.433, HR: +31.969, +28.504, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:05.485.228] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +30.236, HL: 33.701, +28.504, +35.433, HR: +31.969, +28.504, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:06.385.233] [INFO  ] [Battery] SoC = 93%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:07.985.229] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +30.236, HL: 31.969, +28.504, +35.433, HR: +33.701, +28.504, +37.165 Max HR-Knee = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:10.485.228] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +35.433, HR: +33.701, +28.504, +35.433 Max HL-Knee = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:11.374.215] [INFO  ] [Battery] SoC = 93%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:12.985.227] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +35.433, HR: +33.701, +28.504, +35.433 Max HL-Knee = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:15.485.228] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +35.433, HR: +33.701, +28.504, +35.433 Max HL-Knee = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:16.363.212] [INFO  ] [Battery] SoC = 93%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:17.985.275] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +35.433, +28.504, +35.433 Max HR-HipX = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:20.485.227] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +35.433, +28.504, +35.433 Max HR-HipX = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:21.352.216] [INFO  ] [Battery] SoC = 92%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:22.985.316] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +35.433, +28.504, +35.433 Max HR-HipX = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:25.485.227] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +35.433, +28.504, +35.433 Max HR-HipX = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:26.341.064] [INFO  ] [Battery] SoC = 92%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:27.985.228] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +35.433, +28.504, +33.701 Max HR-HipX = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:29.837.240] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 652.676548 
+[2025-06-13 16:09:30.485.221] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +37.165, +28.504, +33.701 Max HR-HipX = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:31.329.814] [INFO  ] [Battery] SoC = 92%, Volt = +32.200V, Temp 25 
+[2025-06-13 16:09:32.985.223] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +37.165, +28.504, +35.433 Max HR-HipX = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:34.274.207] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 16:09:34.337.635] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 16:09:34.338.205] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 16:09:35.354.210] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 16:09:35.354.257] [INFO  ] [BasicMotion] Standing down, please wait... 
+[2025-06-13 16:09:35.485.226] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +37.165, +28.504, +35.433 Max HR-HipX = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:36.318.737] [INFO  ] [Battery] SoC = 92%, Volt = +32.300V, Temp 25 
+[2025-06-13 16:09:37.855.217] [INFO  ] [BasicMotion] Stand down action has finished, waitting to stand up again!!! 
+[2025-06-13 16:09:37.985.228] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +30.236, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +37.165, +28.504, +35.433 Max HR-HipX = +37.165 Min FL-HipY = +28.504 
+[2025-06-13 16:09:40.485.227] [INFO  ] [Controller] [Joints] FL: +31.969, +28.504, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +33.701, HR: +35.433, +28.504, +35.433 Max HR-HipX = +35.433 Min FL-HipY = +28.504 
+[2025-06-13 16:09:41.307.370] [INFO  ] [Battery] SoC = 92%, Volt = +32.400V, Temp 25 
+[2025-06-13 17:58:05.189.378] [INFO  ] [Deeprcs] Robot ID: JY-S5-200 
+[2025-06-13 17:58:05.189.486] [INFO  ] [Deeprcs] Robot Version: standard 
+[2025-06-13 17:58:05.189.489] [INFO  ] [Deeprcs] DeepRCS is working 
+[2025-06-13 17:58:05.189.492] [INFO  ] [Deeprcs] Deeprcs Version: 2.0.153(153) 
+[2025-06-13 17:58:05.189.495] [INFO  ] [Deeprcs] DeepROS Version: 0.2.24(39) 
+[2025-06-13 17:58:05.189.499] [INFO  ] [Deeprcs] DeepRAS Version: 4.1.7(166) 
+[2025-06-13 17:58:05.254.964] [INFO  ] [Motor] Hello, CAN Send 
+[2025-06-13 17:58:05.254.964] [INFO  ] [RT-CAN] Hello, CAN Receive 
+[2025-06-13 17:58:05.255.151] [INFO  ] [CPU] Hello, CPU Monitor 
+[2025-06-13 17:58:05.255.211] [INFO  ] [UltrasonicSensor] Hello, Ultrasonic sensor 
+[2025-06-13 17:58:05.255.251] [INFO  ] [Controller] Hello, MPC Controller 
+[2025-06-13 17:58:05.255.405] [INFO  ] [Battery] Hello, Battery BMS 
+[2025-06-13 17:58:05.255.505] [INFO  ] [MpvVoice] Hello, MpvVoice 
+[2025-06-13 17:58:05.258.767] [INFO  ] [RT-CAN] Set motor timeout threshold = 200 ms
+ 
+[2025-06-13 17:58:06.255.550] [INFO  ] [Deeprcs] Algorithm is start 
+[2025-06-13 17:58:06.259.793] [INFO  ] [Controller] !!!Origin_jumplong_left_bias = +0.000 
+[2025-06-13 17:58:06.259.848] [INFO  ] [basicmethod] 
+******** Enable Status ********
+Flip: 1
+BackFlip: 1
+SideFlip: 1
+Greeting: 1
+Jump: 1
+Dance: 1
+TurnOver: 1
+******** Enable Status ********
+ 
+[2025-06-13 17:58:06.259.873] [INFO  ] [basicmethod] 
+******** Motion Config Setting ********
+Forward Vel Offset: 0.000000
+Side Vel Offset: 0.000000
+is_Default_LIDAR: 0.000000
+Load Mass: 0.000000
+Load X Offset: 0.000000
+Load Y Offset: 0.000000
+Load Z Offset: 60.000000
+Robot Backflip Hip Kp: 70.000000
+Robot Backflip Knee Kp: 70.000000
+Robot Sideflip Abed Kp: 70.000000
+Robot Sideflip Hip Kp: 70.000000
+Robot Sideflip Knee Kp: 60.000000
+backflip_fl_knee_kp: 40.000000
+kp_carpet_comp: 1.000000
+backflip_hl_hip_kp_comp: 1.000000
+backflip_hr_hip_kp_comp: 1.000000
+frontflip_Rev_comp: 0.000000
+jumplong_Rev_comp: 0.000000
+jumplong_left_bias: 0.700000
+policy_forward_kd: 0.900000
+policy_backward_kd: 1.200000
+policy_stand_kd: 0.000000
+******** Motion Config Setting ********
+ 
+[2025-06-13 17:58:06.554.404] [INFO  ] [common policy] common policy CZ network check success 
+[2025-06-13 17:58:06.554.494] [INFO  ] [common policy] 
+name : common policy
+path : ../policy/policy_waq_v7.11-5history-----.pt
+dim  : 45, 5, 270, 12
+dof  : 0.100000, -0.715000, 1.430000,
+       -0.100000, -0.715000, 1.430000,
+       0.100000, -0.715000, 1.430000,
+       -0.100000, -0.715000, 1.430000,
+kp   : 30.000000, 30.000000, 30.000000,
+       30.000000, 30.000000, 30.000000,
+       30.000000, 30.000000, 30.000000,
+       30.000000, 30.000000, 30.000000,
+kd   : 0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+limit: 20.000000, 20.000000, 30.000000,
+       20.000000, 20.000000, 30.000000,
+       20.000000, 20.000000, 30.000000,
+       20.000000, 20.000000, 30.000000,
+max_v: 1.200000, 0.800000, 1.500000,
+scale: 0.250000, 0.250000, 0.050000,
+       2.000000, 2.000000, 0.280000, 
+[2025-06-13 17:58:06.608.927] [INFO  ] [forward student policy] net_path: ../config/policy/ 
+[2025-06-13 17:58:06.609.036] [INFO  ] [forward student policy] stand_lpf: 0.770000 
+[2025-06-13 17:58:06.609.075] [INFO  ] [forward student policy] forward_init_lpf: 0.790000 
+[2025-06-13 17:58:06.609.088] [INFO  ] [forward student policy] forward_init_v: 0.600000 
+[2025-06-13 17:58:06.609.101] [INFO  ] [forward student policy] forward_end_lpf: 0.766667 
+[2025-06-13 17:58:06.609.113] [INFO  ] [forward student policy] forward_end_v: 2.500000 
+[2025-06-13 17:58:06.609.128] [INFO  ] [forward student policy] jump_lpf: 0.766667 
+[2025-06-13 17:58:06.609.137] [INFO  ] [forward student policy] flip_lpf: 0.766667 
+[2025-06-13 17:58:06.609.146] [INFO  ] [forward student policy] uncertain: 0.000000 
+[2025-06-13 17:58:06.609.157] [INFO  ] [forward student policy] v_acc: 0.075000 
+[2025-06-13 17:58:06.609.163] [INFO  ] [forward student policy] w_acc: 0.200000 
+[2025-06-13 17:58:06.609.180] [INFO  ] [forward student policy] stand_switch_time: 0.000000 
+[2025-06-13 17:58:06.609.192] [INFO  ] [forward student policy] reflect_freq: 0.000000 
+[2025-06-13 17:58:06.609.200] [INFO  ] [forward student policy] base_w_co: 0.800000 
+[2025-06-13 17:58:06.609.226] [INFO  ] [forward student policy] max_y_range: 0.250000 
+[2025-06-13 17:58:06.609.236] [INFO  ] [forward student policy] stand_max_y_range: 0.400000 
+[2025-06-13 17:58:06.609.243] [INFO  ] [forward student policy] max_x_range: 0.150000 
+[2025-06-13 17:58:06.609.249] [INFO  ] [forward student policy] target_power: 0.900000 
+[2025-06-13 17:58:06.609.256] [INFO  ] [forward student policy] target_air_time: 0.900000 
+[2025-06-13 17:58:06.609.263] [INFO  ] [forward student policy] forward_limit: 2.000000 
+[2025-06-13 17:58:06.609.270] [INFO  ] [forward student policy] horizon_limit: 1.000000 
+[2025-06-13 17:58:06.609.289] [INFO  ] [forward student policy] jump_max_v: 1.400000 
+[2025-06-13 17:58:06.609.299] [INFO  ] [forward student policy] jump_max_w: 1.900000 
+[2025-06-13 17:58:06.609.323] [INFO  ] [forward student policy] max_jump_time: 0.000000 
+[2025-06-13 17:58:06.609.338] [INFO  ] [forward student policy] max_flip_time: 0.000000 
+[2025-06-13 17:58:06.609.350] [INFO  ] [forward student policy] log_path: ../logs/ 
+[2025-06-13 17:58:06.609.359] [INFO  ] [forward student policy] dataPath: ../config/data/ 
+[2025-06-13 17:58:06.609.399] [INFO  ] [forward student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 17:58:06.609.402] [INFO  ] [forward student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 17:58:06.609.404] [INFO  ] [forward student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 17:58:06.609.425] [INFO  ] [forward student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 17:58:06.609.428] [INFO  ] [forward student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 17:58:06.609.431] [INFO  ] [forward student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 17:58:06.609.443] [INFO  ] [forward student policy] height_range[0] = 0.280000 
+[2025-06-13 17:58:06.609.445] [INFO  ] [forward student policy] height_range[1] = 0.360000 
+[2025-06-13 17:58:06.685.549] [INFO  ] [forward student policy] forward student policy LSC network check success 
+[2025-06-13 17:58:06.686.012] [INFO  ] [forward student policy] 
+name : forward student policy
+path : ../policy/forward_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -1.813923,
+       0.631243, 0.273364, -3.296549, 
+[2025-06-13 17:58:06.731.552] [INFO  ] [jump student policy] net_path: ../config/policy/ 
+[2025-06-13 17:58:06.731.615] [INFO  ] [jump student policy] stand_lpf: 0.770000 
+[2025-06-13 17:58:06.731.642] [INFO  ] [jump student policy] forward_init_lpf: 0.790000 
+[2025-06-13 17:58:06.731.651] [INFO  ] [jump student policy] forward_init_v: 0.600000 
+[2025-06-13 17:58:06.731.661] [INFO  ] [jump student policy] forward_end_lpf: 0.766667 
+[2025-06-13 17:58:06.731.671] [INFO  ] [jump student policy] forward_end_v: 2.500000 
+[2025-06-13 17:58:06.731.681] [INFO  ] [jump student policy] jump_lpf: 0.766667 
+[2025-06-13 17:58:06.731.692] [INFO  ] [jump student policy] flip_lpf: 0.766667 
+[2025-06-13 17:58:06.731.698] [INFO  ] [jump student policy] uncertain: 0.000000 
+[2025-06-13 17:58:06.731.705] [INFO  ] [jump student policy] v_acc: 0.075000 
+[2025-06-13 17:58:06.731.711] [INFO  ] [jump student policy] w_acc: 0.200000 
+[2025-06-13 17:58:06.731.721] [INFO  ] [jump student policy] stand_switch_time: 0.000000 
+[2025-06-13 17:58:06.731.729] [INFO  ] [jump student policy] reflect_freq: 0.000000 
+[2025-06-13 17:58:06.731.734] [INFO  ] [jump student policy] base_w_co: 0.800000 
+[2025-06-13 17:58:06.731.765] [INFO  ] [jump student policy] max_y_range: 0.250000 
+[2025-06-13 17:58:06.731.774] [INFO  ] [jump student policy] stand_max_y_range: 0.400000 
+[2025-06-13 17:58:06.731.781] [INFO  ] [jump student policy] max_x_range: 0.150000 
+[2025-06-13 17:58:06.731.787] [INFO  ] [jump student policy] target_power: 0.900000 
+[2025-06-13 17:58:06.731.792] [INFO  ] [jump student policy] target_air_time: 0.900000 
+[2025-06-13 17:58:06.731.800] [INFO  ] [jump student policy] forward_limit: 2.000000 
+[2025-06-13 17:58:06.731.806] [INFO  ] [jump student policy] horizon_limit: 1.000000 
+[2025-06-13 17:58:06.731.815] [INFO  ] [jump student policy] jump_max_v: 1.400000 
+[2025-06-13 17:58:06.731.824] [INFO  ] [jump student policy] jump_max_w: 1.900000 
+[2025-06-13 17:58:06.731.852] [INFO  ] [jump student policy] max_jump_time: 0.000000 
+[2025-06-13 17:58:06.731.861] [INFO  ] [jump student policy] max_flip_time: 0.000000 
+[2025-06-13 17:58:06.731.872] [INFO  ] [jump student policy] log_path: ../logs/ 
+[2025-06-13 17:58:06.731.883] [INFO  ] [jump student policy] dataPath: ../config/data/ 
+[2025-06-13 17:58:06.731.910] [INFO  ] [jump student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 17:58:06.731.913] [INFO  ] [jump student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 17:58:06.731.915] [INFO  ] [jump student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 17:58:06.731.934] [INFO  ] [jump student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 17:58:06.731.935] [INFO  ] [jump student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 17:58:06.731.937] [INFO  ] [jump student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 17:58:06.731.946] [INFO  ] [jump student policy] height_range[0] = 0.280000 
+[2025-06-13 17:58:06.731.948] [INFO  ] [jump student policy] height_range[1] = 0.360000 
+[2025-06-13 17:58:06.762.450] [INFO  ] [jump student policy] jump student policy jump network check success 
+[2025-06-13 17:58:06.762.881] [INFO  ] [jump student policy] 
+name : jump student policy
+path : ../policy/jump_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -0.000000,
+       0.000000, -0.000000, 0.000000, 
+[2025-06-13 17:58:06.802.873] [INFO  ] [flip student policy] net_path: ../config/policy/ 
+[2025-06-13 17:58:06.802.927] [INFO  ] [flip student policy] stand_lpf: 0.770000 
+[2025-06-13 17:58:06.802.956] [INFO  ] [flip student policy] forward_init_lpf: 0.790000 
+[2025-06-13 17:58:06.802.964] [INFO  ] [flip student policy] forward_init_v: 0.600000 
+[2025-06-13 17:58:06.802.973] [INFO  ] [flip student policy] forward_end_lpf: 0.766667 
+[2025-06-13 17:58:06.802.982] [INFO  ] [flip student policy] forward_end_v: 2.500000 
+[2025-06-13 17:58:06.802.992] [INFO  ] [flip student policy] jump_lpf: 0.766667 
+[2025-06-13 17:58:06.803.001] [INFO  ] [flip student policy] flip_lpf: 0.766667 
+[2025-06-13 17:58:06.803.006] [INFO  ] [flip student policy] uncertain: 0.000000 
+[2025-06-13 17:58:06.803.013] [INFO  ] [flip student policy] v_acc: 0.075000 
+[2025-06-13 17:58:06.803.017] [INFO  ] [flip student policy] w_acc: 0.200000 
+[2025-06-13 17:58:06.803.027] [INFO  ] [flip student policy] stand_switch_time: 0.000000 
+[2025-06-13 17:58:06.803.034] [INFO  ] [flip student policy] reflect_freq: 0.000000 
+[2025-06-13 17:58:06.803.040] [INFO  ] [flip student policy] base_w_co: 0.800000 
+[2025-06-13 17:58:06.803.064] [INFO  ] [flip student policy] max_y_range: 0.250000 
+[2025-06-13 17:58:06.803.071] [INFO  ] [flip student policy] stand_max_y_range: 0.400000 
+[2025-06-13 17:58:06.803.078] [INFO  ] [flip student policy] max_x_range: 0.150000 
+[2025-06-13 17:58:06.803.083] [INFO  ] [flip student policy] target_power: 0.900000 
+[2025-06-13 17:58:06.803.087] [INFO  ] [flip student policy] target_air_time: 0.900000 
+[2025-06-13 17:58:06.803.093] [INFO  ] [flip student policy] forward_limit: 2.000000 
+[2025-06-13 17:58:06.803.099] [INFO  ] [flip student policy] horizon_limit: 1.000000 
+[2025-06-13 17:58:06.803.107] [INFO  ] [flip student policy] jump_max_v: 1.400000 
+[2025-06-13 17:58:06.803.115] [INFO  ] [flip student policy] jump_max_w: 1.900000 
+[2025-06-13 17:58:06.803.137] [INFO  ] [flip student policy] max_jump_time: 0.000000 
+[2025-06-13 17:58:06.803.146] [INFO  ] [flip student policy] max_flip_time: 0.000000 
+[2025-06-13 17:58:06.803.155] [INFO  ] [flip student policy] log_path: ../logs/ 
+[2025-06-13 17:58:06.803.165] [INFO  ] [flip student policy] dataPath: ../config/data/ 
+[2025-06-13 17:58:06.803.187] [INFO  ] [flip student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 17:58:06.803.189] [INFO  ] [flip student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 17:58:06.803.192] [INFO  ] [flip student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 17:58:06.803.209] [INFO  ] [flip student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 17:58:06.803.211] [INFO  ] [flip student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 17:58:06.803.213] [INFO  ] [flip student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 17:58:06.803.221] [INFO  ] [flip student policy] height_range[0] = 0.280000 
+[2025-06-13 17:58:06.803.223] [INFO  ] [flip student policy] height_range[1] = 0.360000 
+[2025-06-13 17:58:06.832.108] [INFO  ] [flip student policy] flip student policy flip network check success 
+[2025-06-13 17:58:06.832.587] [INFO  ] [flip student policy] 
+name : flip student policy
+path : ../policy/flip_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -63.772919,
+       -22.883396, -38.644463, -20.762426, 
+[2025-06-13 17:58:06.881.420] [INFO  ] [stand student policy] net_path: ../config/policy/ 
+[2025-06-13 17:58:06.881.474] [INFO  ] [stand student policy] stand_lpf: 0.770000 
+[2025-06-13 17:58:06.881.494] [INFO  ] [stand student policy] forward_init_lpf: 0.790000 
+[2025-06-13 17:58:06.881.501] [INFO  ] [stand student policy] forward_init_v: 0.600000 
+[2025-06-13 17:58:06.881.511] [INFO  ] [stand student policy] forward_end_lpf: 0.766667 
+[2025-06-13 17:58:06.881.519] [INFO  ] [stand student policy] forward_end_v: 2.500000 
+[2025-06-13 17:58:06.881.528] [INFO  ] [stand student policy] jump_lpf: 0.766667 
+[2025-06-13 17:58:06.881.538] [INFO  ] [stand student policy] flip_lpf: 0.766667 
+[2025-06-13 17:58:06.881.543] [INFO  ] [stand student policy] uncertain: 0.000000 
+[2025-06-13 17:58:06.881.550] [INFO  ] [stand student policy] v_acc: 0.075000 
+[2025-06-13 17:58:06.881.555] [INFO  ] [stand student policy] w_acc: 0.200000 
+[2025-06-13 17:58:06.881.565] [INFO  ] [stand student policy] stand_switch_time: 0.000000 
+[2025-06-13 17:58:06.881.572] [INFO  ] [stand student policy] reflect_freq: 0.000000 
+[2025-06-13 17:58:06.881.582] [INFO  ] [stand student policy] base_w_co: 0.800000 
+[2025-06-13 17:58:06.881.606] [INFO  ] [stand student policy] max_y_range: 0.250000 
+[2025-06-13 17:58:06.881.614] [INFO  ] [stand student policy] stand_max_y_range: 0.400000 
+[2025-06-13 17:58:06.881.620] [INFO  ] [stand student policy] max_x_range: 0.150000 
+[2025-06-13 17:58:06.881.629] [INFO  ] [stand student policy] target_power: 0.900000 
+[2025-06-13 17:58:06.881.634] [INFO  ] [stand student policy] target_air_time: 0.900000 
+[2025-06-13 17:58:06.881.640] [INFO  ] [stand student policy] forward_limit: 2.000000 
+[2025-06-13 17:58:06.881.651] [INFO  ] [stand student policy] horizon_limit: 1.000000 
+[2025-06-13 17:58:06.881.659] [INFO  ] [stand student policy] jump_max_v: 1.400000 
+[2025-06-13 17:58:06.881.667] [INFO  ] [stand student policy] jump_max_w: 1.900000 
+[2025-06-13 17:58:06.881.691] [INFO  ] [stand student policy] max_jump_time: 0.000000 
+[2025-06-13 17:58:06.881.700] [INFO  ] [stand student policy] max_flip_time: 0.000000 
+[2025-06-13 17:58:06.881.709] [INFO  ] [stand student policy] log_path: ../logs/ 
+[2025-06-13 17:58:06.881.719] [INFO  ] [stand student policy] dataPath: ../config/data/ 
+[2025-06-13 17:58:06.881.740] [INFO  ] [stand student policy] forward_joint_d_gain[0] = 0.600000  
+[2025-06-13 17:58:06.881.742] [INFO  ] [stand student policy] forward_joint_d_gain[1] = 0.600000  
+[2025-06-13 17:58:06.881.748] [INFO  ] [stand student policy] forward_joint_d_gain[2] = 0.600000  
+[2025-06-13 17:58:06.881.771] [INFO  ] [stand student policy] maxVelCmd[0] = 3.400000 
+[2025-06-13 17:58:06.881.773] [INFO  ] [stand student policy] maxVelCmd[1] = 1.600000 
+[2025-06-13 17:58:06.881.775] [INFO  ] [stand student policy] maxVelCmd[2] = 4.500000 
+[2025-06-13 17:58:06.881.783] [INFO  ] [stand student policy] height_range[0] = 0.280000 
+[2025-06-13 17:58:06.881.785] [INFO  ] [stand student policy] height_range[1] = 0.360000 
+[2025-06-13 17:58:06.944.573] [INFO  ] [stand student policy] stand student policy LSC network check success 
+[2025-06-13 17:58:06.945.059] [INFO  ] [stand student policy] 
+name : stand student policy
+path : ../policy/stand_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+       0.600000, 0.600000, 0.600000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -37.156113,
+       -3.672523, -10.421694, 2.636744, 
+[2025-06-13 17:58:06.993.371] [INFO  ] [handstand policy] net_path: ../config/policy/ 
+[2025-06-13 17:58:06.993.437] [INFO  ] [handstand policy] lpf_HStand: 0.800000 
+[2025-06-13 17:58:06.993.491] [INFO  ] [handstand policy] uncertain: 0.000000 
+[2025-06-13 17:58:06.993.498] [INFO  ] [handstand policy] v_acc: 0.100000 
+[2025-06-13 17:58:06.993.535] [INFO  ] [handstand policy] bipedal_base_w_co: 1.000000 
+[2025-06-13 17:58:06.993.547] [INFO  ] [handstand policy] max_y_range: 0.250000 
+[2025-06-13 17:58:06.993.557] [INFO  ] [handstand policy] max_x_range: 0.150000 
+[2025-06-13 17:58:06.993.564] [INFO  ] [handstand policy] target_power: 0.900000 
+[2025-06-13 17:58:06.993.569] [INFO  ] [handstand policy] target_air_time: 0.900000 
+[2025-06-13 17:58:06.993.574] [INFO  ] [handstand policy] forward_limit: 0.500000 
+[2025-06-13 17:58:06.993.578] [INFO  ] [handstand policy] horizon_limit: 0.000000 
+[2025-06-13 17:58:06.993.595] [INFO  ] [handstand policy] bipedal_max_v: 1.200000 
+[2025-06-13 17:58:06.993.606] [INFO  ] [handstand policy] bipedal_max_w: 1.500000 
+[2025-06-13 17:58:06.993.627] [INFO  ] [handstand policy] log_path: ../logs/ 
+[2025-06-13 17:58:06.993.634] [INFO  ] [handstand policy] dataPath: ../config/data/ 
+[2025-06-13 17:58:06.993.670] [INFO  ] [handstand policy] bipedal_joint_d_gain[0] = 0.800000  
+[2025-06-13 17:58:06.993.672] [INFO  ] [handstand policy] bipedal_joint_d_gain[1] = 0.800000  
+[2025-06-13 17:58:06.993.674] [INFO  ] [handstand policy] bipedal_joint_d_gain[2] = 0.800000  
+[2025-06-13 17:58:06.993.682] [INFO  ] [handstand policy] maxVelCmd[0] = 1.500000 
+[2025-06-13 17:58:06.993.687] [INFO  ] [handstand policy] maxVelCmd[1] = 0.100000 
+[2025-06-13 17:58:06.993.701] [INFO  ] [handstand policy] maxVelCmd[2] = 0.500000 
+[2025-06-13 17:58:06.993.715] [INFO  ] [handstand policy] bipedal_height_range[0] = 0.490000 
+[2025-06-13 17:58:06.993.717] [INFO  ] [handstand policy] bipedal_height_range[1] = 0.491000 
+[2025-06-13 17:58:07.023.895] [INFO  ] [handstand policy] handstand policy HStand network check success 
+[2025-06-13 17:58:07.024.294] [INFO  ] [handstand policy] 
+name : handstand policy
+path : ../policy/bipedal_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, -0.000000,
+       0.000000, -0.000000, 0.000000, 
+[2025-06-13 17:58:07.064.006] [INFO  ] [handstandswing policy] net_path: ../config/policy/ 
+[2025-06-13 17:58:07.064.073] [INFO  ] [handstandswing policy] lpf_HStand: 0.800000 
+[2025-06-13 17:58:07.064.121] [INFO  ] [handstandswing policy] uncertain: 0.000000 
+[2025-06-13 17:58:07.064.128] [INFO  ] [handstandswing policy] v_acc: 0.100000 
+[2025-06-13 17:58:07.064.160] [INFO  ] [handstandswing policy] bipedal_base_w_co: 1.000000 
+[2025-06-13 17:58:07.064.189] [INFO  ] [handstandswing policy] max_y_range: 0.250000 
+[2025-06-13 17:58:07.064.199] [INFO  ] [handstandswing policy] max_x_range: 0.150000 
+[2025-06-13 17:58:07.064.206] [INFO  ] [handstandswing policy] target_power: 0.900000 
+[2025-06-13 17:58:07.064.211] [INFO  ] [handstandswing policy] target_air_time: 0.900000 
+[2025-06-13 17:58:07.064.217] [INFO  ] [handstandswing policy] forward_limit: 0.500000 
+[2025-06-13 17:58:07.064.222] [INFO  ] [handstandswing policy] horizon_limit: 0.000000 
+[2025-06-13 17:58:07.064.239] [INFO  ] [handstandswing policy] bipedal_max_v: 1.200000 
+[2025-06-13 17:58:07.064.246] [INFO  ] [handstandswing policy] bipedal_max_w: 1.500000 
+[2025-06-13 17:58:07.064.275] [INFO  ] [handstandswing policy] log_path: ../logs/ 
+[2025-06-13 17:58:07.064.288] [INFO  ] [handstandswing policy] dataPath: ../config/data/ 
+[2025-06-13 17:58:07.064.324] [INFO  ] [handstandswing policy] bipedal_joint_d_gain[0] = 0.800000  
+[2025-06-13 17:58:07.064.327] [INFO  ] [handstandswing policy] bipedal_joint_d_gain[1] = 0.800000  
+[2025-06-13 17:58:07.064.329] [INFO  ] [handstandswing policy] bipedal_joint_d_gain[2] = 0.800000  
+[2025-06-13 17:58:07.064.337] [INFO  ] [handstandswing policy] maxVelCmd[0] = 1.500000 
+[2025-06-13 17:58:07.064.339] [INFO  ] [handstandswing policy] maxVelCmd[1] = 0.100000 
+[2025-06-13 17:58:07.064.344] [INFO  ] [handstandswing policy] maxVelCmd[2] = 0.500000 
+[2025-06-13 17:58:07.064.359] [INFO  ] [handstandswing policy] bipedal_height_range[0] = 0.490000 
+[2025-06-13 17:58:07.064.362] [INFO  ] [handstandswing policy] bipedal_height_range[1] = 0.491000 
+[2025-06-13 17:58:07.081.891] [INFO  ] [handstandswing policy] handstandswing policy HStandSwing network check success 
+[2025-06-13 17:58:07.082.263] [INFO  ] [handstandswing policy] 
+name : handstandswing policy
+path : ../policy/bipedal_motor_p_command_policy.pt
+dim  : 45, 56, 2565, 12
+dof  : 0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+       0.100000, -0.900000, 1.430000,
+       -0.100000, -0.900000, 1.430000,
+kp   : 25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+       25.000000, 25.000000, 25.000000,
+kd   : 0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+       0.800000, 0.800000, 0.800000,
+limit: 50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+       50.000000, 50.000000, 50.000000,
+max_v: 2.500000, 2.500000, 2.000000,
+scale: 0.250000, 0.250000, 5.867981,
+       -0.277985, -0.000000, -0.000145, 
+[2025-06-13 17:58:07.082.301] [INFO  ] [NetworkController] policy map contains : 
+[2025-06-13 17:58:07.082.304] [INFO  ] [NetworkController] 0 : common policy  
+[2025-06-13 17:58:07.082.312] [INFO  ] [NetworkController] 1 : forward student policy  
+[2025-06-13 17:58:07.082.315] [INFO  ] [NetworkController] 2 : jump student policy  
+[2025-06-13 17:58:07.082.317] [INFO  ] [NetworkController] 3 : flip student policy  
+[2025-06-13 17:58:07.082.319] [INFO  ] [NetworkController] 4 : stand student policy  
+[2025-06-13 17:58:07.082.321] [INFO  ] [NetworkController] 5 : handstand policy  
+[2025-06-13 17:58:07.082.324] [INFO  ] [NetworkController] 6 : handstandswing policy  
+[2025-06-13 17:58:07.082.450] [INFO  ] [BasicMotion] Switching to kWaitForStanding!!! 
+[2025-06-13 17:58:07.082.884] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 0 
+[2025-06-13 17:58:07.082.895] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 0 
+[2025-06-13 17:58:07.082.926] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 1 
+[2025-06-13 17:58:07.083.888] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 2 
+[2025-06-13 17:58:07.084.882] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 3 
+[2025-06-13 17:58:07.085.881] [INFO  ] [DeferredRecorder] -------max_cycle = +0.000, count = 4 
+[2025-06-13 17:58:07.294.235] [INFO  ] [Battery] SoC = 92%, Volt = +32.500V, Temp 26 
+[2025-06-13 17:58:09.260.742] [WARN  ] [CPU] Cpu temperature -1713452444 cpu  
+[2025-06-13 17:58:09.580.921] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:12.080.911] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:12.284.040] [INFO  ] [Battery] SoC = 92%, Volt = +32.500V, Temp 26 
+[2025-06-13 17:58:14.580.912] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:17.080.912] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:17.273.793] [INFO  ] [Battery] SoC = 92%, Volt = +32.500V, Temp 26 
+[2025-06-13 17:58:19.580.912] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:22.080.913] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:22.263.574] [INFO  ] [Battery] SoC = 92%, Volt = +32.500V, Temp 26 
+[2025-06-13 17:58:24.580.911] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:27.080.913] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:27.253.136] [INFO  ] [Battery] SoC = 92%, Volt = +32.400V, Temp 26 
+[2025-06-13 17:58:29.580.913] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:32.080.909] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:32.242.661] [INFO  ] [Battery] SoC = 92%, Volt = +32.400V, Temp 26 
+[2025-06-13 17:58:34.580.936] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:34.725.904] [INFO  ] [Controller] Switch to Joystick Mode!!! 
+[2025-06-13 17:58:35.521.902] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 17:58:35.521.945] [INFO  ] [BasicMotion] Standing up, please wait... 
+[2025-06-13 17:58:35.521.962] [INFO  ] [BasicMotion] Switching to zeroposition !!!!! 
+[2025-06-13 17:58:37.082.909] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:37.232.045] [INFO  ] [Battery] SoC = 92%, Volt = +32.400V, Temp 26 
+[2025-06-13 17:58:39.583.909] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:41.023.898] [INFO  ] [BasicMotion] Standing up, please wait... 
+[2025-06-13 17:58:42.085.907] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +25.039, +25.039, +25.039, HL: 25.039, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FL-HipX = +25.039 Min FL-HipX = +25.039 
+[2025-06-13 17:58:42.221.521] [INFO  ] [Battery] SoC = 92%, Volt = +31.900V, Temp 26 
+[2025-06-13 17:58:43.024.902] [INFO  ] [BasicMotion] Stand up action has finished, waitting to switch to force control mode! 
+[2025-06-13 17:58:43.024.948] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 17:58:43.826.950] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 37.571291 
+[2025-06-13 17:58:44.585.904] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +26.772, +26.772, +25.039, HL: 26.772, +25.039, +25.039, HR: +25.039, +25.039, +25.039 Max FR-HipX = +26.772 Min FL-HipX = +25.039 
+[2025-06-13 17:58:47.085.902] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +26.772, +26.772, +25.039, HL: 26.772, +25.039, +26.772, HR: +26.772, +25.039, +26.772 Max FR-HipX = +26.772 Min FL-HipX = +25.039 
+[2025-06-13 17:58:47.210.812] [INFO  ] [Battery] SoC = 92%, Volt = +32.100V, Temp 26 
+[2025-06-13 17:58:49.585.903] [INFO  ] [Controller] [Joints] FL: +25.039, +25.039, +25.039 ,FR: +26.772, +26.772, +25.039, HL: 26.772, +25.039, +26.772, HR: +26.772, +25.039, +26.772 Max FR-HipX = +26.772 Min FL-HipX = +25.039 
+[2025-06-13 17:58:49.698.893] [INFO  ] [Controller] trot run... 
+[2025-06-13 17:58:52.085.903] [INFO  ] [Controller] [Joints] FL: +26.772, +25.039, +26.772 ,FR: +26.772, +26.772, +26.772, HL: 26.772, +25.039, +28.504, HR: +26.772, +25.039, +28.504 Max HL-Knee = +28.504 Min FL-HipY = +25.039 
+[2025-06-13 17:58:52.200.001] [INFO  ] [Battery] SoC = 92%, Volt = +31.600V, Temp 26 
+[2025-06-13 17:58:54.585.905] [INFO  ] [Controller] [Joints] FL: +26.772, +25.039, +26.772 ,FR: +26.772, +26.772, +26.772, HL: 26.772, +25.039, +30.236, HR: +26.772, +26.772, +30.236 Max HL-Knee = +30.236 Min FL-HipY = +25.039 
+[2025-06-13 17:58:57.085.907] [INFO  ] [Controller] [Joints] FL: +26.772, +25.039, +26.772 ,FR: +28.504, +26.772, +28.504, HL: 28.504, +26.772, +31.969, HR: +28.504, +26.772, +31.969 Max HL-Knee = +31.969 Min FL-HipY = +25.039 
+[2025-06-13 17:58:57.189.162] [INFO  ] [Battery] SoC = 92%, Volt = +31.900V, Temp 26 
+[2025-06-13 17:58:59.585.908] [INFO  ] [Controller] [Joints] FL: +28.504, +25.039, +28.504 ,FR: +28.504, +26.772, +28.504, HL: 28.504, +26.772, +33.701, HR: +28.504, +26.772, +33.701 Max HL-Knee = +33.701 Min FL-HipY = +25.039 
+[2025-06-13 17:59:02.085.906] [INFO  ] [Controller] [Joints] FL: +28.504, +26.772, +28.504 ,FR: +30.236, +26.772, +30.236, HL: 28.504, +26.772, +33.701, HR: +28.504, +26.772, +35.433 Max HR-Knee = +35.433 Min FL-HipY = +26.772 
+[2025-06-13 17:59:02.178.247] [INFO  ] [Battery] SoC = 91%, Volt = +32.300V, Temp 26 
+[2025-06-13 17:59:04.585.906] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +30.236, HL: 30.236, +26.772, +37.165, HR: +28.504, +26.772, +37.165 Max HL-Knee = +37.165 Min FL-HipY = +26.772 
+[2025-06-13 17:59:07.085.907] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +30.236, +26.772, +31.969, HL: 30.236, +28.504, +37.165, HR: +28.504, +28.504, +38.898 Max HR-Knee = +38.898 Min FL-HipY = +26.772 
+[2025-06-13 17:59:07.167.526] [INFO  ] [Battery] SoC = 91%, Volt = +31.700V, Temp 26 
+[2025-06-13 17:59:09.585.903] [INFO  ] [Controller] [Joints] FL: +30.236, +26.772, +30.236 ,FR: +31.969, +26.772, +31.969, HL: 30.236, +28.504, +38.898, HR: +30.236, +28.504, +40.630 Max HR-Knee = +40.630 Min FL-HipY = +26.772 
+[2025-06-13 17:59:12.085.907] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +31.969, +28.504, +31.969, HL: 31.969, +28.504, +40.630, HR: +30.236, +28.504, +40.630 Max HL-Knee = +40.630 Min FL-HipY = +26.772 
+[2025-06-13 17:59:12.156.652] [INFO  ] [Battery] SoC = 91%, Volt = +31.700V, Temp 26 
+[2025-06-13 17:59:14.585.908] [INFO  ] [Controller] [Joints] FL: +31.969, +26.772, +31.969 ,FR: +33.701, +28.504, +33.701, HL: 31.969, +28.504, +42.362, HR: +30.236, +28.504, +42.362 Max HL-Knee = +42.362 Min FL-HipY = +26.772 
+[2025-06-13 17:59:17.085.906] [INFO  ] [Controller] [Joints] FL: +33.701, +26.772, +31.969 ,FR: +33.701, +28.504, +33.701, HL: 31.969, +28.504, +44.094, HR: +30.236, +30.236, +44.094 Max HL-Knee = +44.094 Min FL-HipY = +26.772 
+[2025-06-13 17:59:17.145.794] [INFO  ] [Battery] SoC = 91%, Volt = +32.000V, Temp 26 
+[2025-06-13 17:59:19.585.905] [INFO  ] [Controller] [Joints] FL: +33.701, +26.772, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 33.701, +30.236, +44.094, HR: +30.236, +30.236, +45.827 Max HR-Knee = +45.827 Min FL-HipY = +26.772 
+[2025-06-13 17:59:22.085.907] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 33.701, +30.236, +45.827, HR: +30.236, +30.236, +47.559 Max HR-Knee = +47.559 Min FL-HipY = +28.504 
+[2025-06-13 17:59:22.134.964] [INFO  ] [Battery] SoC = 91%, Volt = +31.800V, Temp 26 
+[2025-06-13 17:59:24.585.904] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +33.701 ,FR: +35.433, +28.504, +35.433, HL: 33.701, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 17:59:27.085.904] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +33.701 ,FR: +37.165, +28.504, +35.433, HL: 33.701, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 17:59:27.121.893] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 17:59:27.124.028] [INFO  ] [Battery] SoC = 90%, Volt = +31.800V, Temp 26 
+[2025-06-13 17:59:28.107.306] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 17:59:28.107.890] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 17:59:29.109.923] [INFO  ] [TVMPC] JY is Moving... (tvmpc),  time: 82.854292 
+[2025-06-13 17:59:29.585.905] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +35.433 ,FR: +37.165, +28.504, +37.165, HL: 33.701, +30.236, +47.559, HR: +31.969, +30.236, +51.024 Max HR-Knee = +51.024 Min FL-HipY = +28.504 
+[2025-06-13 17:59:31.496.896] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 17:59:32.085.907] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +35.433 ,FR: +37.165, +28.504, +37.165, HL: 33.701, +30.236, +49.291, HR: +31.969, +30.236, +51.024 Max HR-Knee = +51.024 Min FL-HipY = +28.504 
+[2025-06-13 17:59:32.113.164] [INFO  ] [Battery] SoC = 90%, Volt = +31.900V, Temp 26 
+[2025-06-13 17:59:32.260.298] [INFO  ] [TVMPC] [trot]STOP!!! 
+[2025-06-13 17:59:32.260.889] [INFO  ] [BasicMotion] Switching to force control mode, please wait... 
+[2025-06-13 17:59:32.490.892] [INFO  ] [Controller] stand_cmd.... 
+[2025-06-13 17:59:33.260.968] [INFO  ] [BasicMotion] Standing down, please wait... 
+[2025-06-13 17:59:34.585.911] [INFO  ] [Controller] [Joints] FL: +35.433, +28.504, +35.433 ,FR: +37.165, +28.504, +37.165, HL: 33.701, +30.236, +47.559, HR: +31.969, +30.236, +49.291 Max HR-Knee = +49.291 Min FL-HipY = +28.504 
+[2025-06-13 17:59:35.761.898] [INFO  ] [BasicMotion] Stand down action has finished, waitting to stand up again!!! 

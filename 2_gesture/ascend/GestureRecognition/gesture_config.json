@@ -1,0 +1,56 @@
+{
+  "system_settings": {
+    "detection_confidence_threshold": 0.4,
+    "iou_threshold": 0.5,
+    "analysis_interval": 0.5,
+    "combination_timeout": 3.0,
+    "gesture_buffer_size": 10,
+    "learning_duration": 5.0
+  },
+  
+  "standard_gesture_mappings": {
+    "single_gestures": {
+      "2": "ACTION_STAND_DOWN",
+      "7": "ACTION_TWIST_JUMP", 
+      "9": "ACTION_TWIST_BODY",
+      "10": "ACTION_MOONWALK",
+      "16": "ACTION_GREET"
+    },
+    
+    "predefined_combinations": {
+      "(2, 7)": "ACTION_DANCE_1",
+      "(7, 9)": "ACTION_DANCE_2",
+      "(9, 10)": "ACTION_SPECIAL_MOVE",
+      "(10, 16)": "ACTION_GREETING_DANCE"
+    },
+    
+    "predefined_sequences": {
+      "(1, 2, 3)": "TASK_START_SEQUENCE",
+      "(7, 8, 9)": "TASK_COMPLEX_MOVEMENT",
+      "(16, 16, 16)": "EMERGENCY_STOP"
+    }
+  },
+  
+  "action_descriptions": {
+    "ACTION_STAND_DOWN": "趴下动作",
+    "ACTION_TWIST_JUMP": "扭身跳动作",
+    "ACTION_TWIST_BODY": "扭身体动作", 
+    "ACTION_MOONWALK": "太空步动作",
+    "ACTION_GREET": "打招呼动作",
+    "ACTION_DANCE_1": "舞蹈动作1",
+    "ACTION_DANCE_2": "舞蹈动作2",
+    "ACTION_SPECIAL_MOVE": "特殊移动动作",
+    "ACTION_GREETING_DANCE": "问候舞蹈动作",
+    "TASK_START_SEQUENCE": "任务开始序列",
+    "TASK_COMPLEX_MOVEMENT": "复杂移动任务",
+    "EMERGENCY_STOP": "紧急停止"
+  },
+  
+  "ui_settings": {
+    "window_width": 800,
+    "window_height": 600,
+    "text_color": [0, 255, 0],
+    "text_size": 0.6,
+    "text_thickness": 2
+  }
+}

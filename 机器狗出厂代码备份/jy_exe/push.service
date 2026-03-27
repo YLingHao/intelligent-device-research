@@ -1,0 +1,11 @@
+[Unit]
+Description=push
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/firefly/jy_exe/push_video.sh
+
+[Install]
+WantedBy=network.target
+
